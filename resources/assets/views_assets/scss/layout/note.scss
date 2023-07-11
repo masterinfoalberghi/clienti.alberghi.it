@@ -1,0 +1,28 @@
+  
+  /**
+   * LAYOUT Note
+   */	
+   
+	.note { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; 
+		
+		background: $grigio-chiaro;
+		padding: (calc($pad / 2)); 
+		border:1px solid $verde; 
+		border-left:10px solid $verde; 
+		position: relative; 
+		color: $scuro; 
+		text-align: left !important; 
+	}
+	
+	.servizi-in-evidenza .note { background: $chiaro; }
+	
+	.note.danger {
+		background: $chiaro; 
+		border:1px solid $rosso; 
+	}
+	
+
+	
+	.note h4 { color: $scuro !important; margin-top: 11px !important; padding:0 !important; font-size: 18px !important; margin-top: 0 !important; }

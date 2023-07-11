@@ -1,0 +1,12 @@
+
+	/**
+	 * CONTENT LEFT
+	 */	
+	 
+	.left .main-content-image-container { 
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		left:50%;
+		right:0;
+		margin-left:calc($pad / 6);
+	}
+	

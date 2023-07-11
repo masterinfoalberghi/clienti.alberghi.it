@@ -1,0 +1,16 @@
+	
+	/**
+	 * HOVER Sidebar
+	 */
+
+	@import '../include/config';
+	.sidebar nav ul li:hover { background: $hightlight; color: $scuro; border-bottom:1px solid transparent; }
+	.sidebar nav ul li.evidenziato:hover { background: $hightlight2; }
+
+	.sidebar nav ul li.evidenziato.lastMinute:hover  { background: $rosso; }
+	.sidebar nav ul li.evidenziato.offerteSpeciali:hover {  background: $acqua;}
+
+	.sidebar nav ul li.evidenziato.lastMinute:hover a,
+	.sidebar nav ul li.evidenziato.offerteSpeciali:hover a {  color: $chiaro;}
+
+	.sidebar nav ul li:hover .badge { background: none; }

@@ -1,0 +1,9 @@
+	
+	/**
+	 * HOVER Compare
+	 */	
+
+	@import "../include/config";
+	
+	table#compare tr:hover td:not(.disabled),
+	table#compare tr:hover { background: $chiaro;}

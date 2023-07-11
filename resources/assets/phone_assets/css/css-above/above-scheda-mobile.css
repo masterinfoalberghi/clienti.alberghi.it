@@ -1,0 +1,642 @@
+/* Bottoni */
+
+.tornahotel {
+    margin: 20px 0;
+    display: block;
+}
+
+.dot {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+.dot img {
+    width: 70px !important;
+    border: none !important;
+    margin-top: 85px;
+}
+
+/* -- Colori -- */
+
+.white-fe-pulsante {
+    color: #fff;
+}
+
+.white-bg-scheda {
+    background: #fff;
+}
+
+.orange {
+    background: #FF9326;
+    color: #fff;
+}
+
+.green {
+    background: #639a48;
+    color: #fff;
+}
+
+.cyan {
+    background: #1fb0e1;
+    color: #fff;
+}
+
+a {
+    color: #35a6e8;
+}
+
+a:hover {
+    color: #6ac0d8;
+}
+
+/* -- Preferiti -- */
+
+.item-listing-favorites {
+    position: absolute;
+    /* top:60px;  */
+    top: 135px;
+    /* DA TOGLIERE QUANDO TOLGO COVID BANNER E RIPRISITNARE SOPRA*/
+    right: 13px;
+    z-index: 100;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.item-listing-favorites a {
+    width: 48px;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+}
+
+.item-listing-favorites .icon-heart-empty {
+    color: #666;
+    font-size: 22px;
+}
+
+.item-listing-favorites .icon-heart {
+    color: #F24A46;
+    font-size: 22px;
+}
+
+/* -- Informazioni -- */
+#infodati { margin:25px 5px 15px; padding:0 15px;}
+
+.infodati_img {
+    float: left;
+    padding-right: 23px;
+    font-size: 14px;
+}
+
+.infodati {
+    line-height: 1.5em;
+    display: block;
+    float: left;
+    width: 250px;
+}
+
+.infodati.whatsapp,
+.infodati.whatsapp small {
+    color: #639a48!important;
+}
+
+#infohotel small {
+    color: #666;
+}
+
+/* -- Apertura -- */
+
+#aperturahotel {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin: 15px 0;
+}
+
+.small-gallery-image { float:left; width:50%; display:none;}
+.landscape .small-gallery-image { display:block;}
+/* -- Tipografia -- */
+
+h2,
+h3 {
+    font-weight: normal;
+    color: #195c8a;
+}
+
+
+/* -- Slider -- */
+
+.slick-slider {
+    background: #fff;
+}
+
+
+/* -- Gallery -- */
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* figure:after {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); 
+    content: " ";
+} */
+
+figcaption {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    text-align: left;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    padding: 7px 10px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-bottom: none;
+    text-shadow: 0 0px 1px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    /* background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%); */
+}
+
+figcaption span {
+    width: 220px;
+    display: block;
+}
+
+.gallery-hotel {
+    overflow: hidden;
+    position: relative;
+    display: table;
+    margin: 2px 0 2px;
+    width: 100%;
+    
+}
+
+.gallery-hotel img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle; 
+}
+
+.gallery-hotel .link-text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-hotel .link-text img {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+
+/*.swipe { background: rgba(0,0,0,0.5) url("//static.info-alberghi.com/images/gesture/scroll.png") center center no-repeat; width:100%; height:100%; display: block; position: absolute; top:0; left:0;z-index: 2; }*/
+
+.invioemailhotel {
+    margin: 0;
+    margin-top: -2px;
+}
+
+
+/* -- dati hotel -- */
+
+#datihotel {
+    position: relative;
+    background-color: #fff; padding:15px; 
+    margin:0px -15px;
+}
+
+.dati-hotel {
+    display: none;
+}
+
+
+/* -- Nome -- */
+
+.nome-hotel {
+    padding: 10px 10px;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    margin-bottom:15px;
+}
+
+.nome-hotel .item-name {
+    display: block;
+}
+
+.nome-hotel .item-name div.h1 {
+    font-size: 30px;
+    font-weight: normal;
+    padding: 0 5px;
+    margin: 0;
+    display: inline;
+}
+
+.nome-hotel .rating {
+    font-size: 14px;
+    position: relative;
+    margin-left: 5px;
+    color: #F1B000;
+    display: inline;
+    position: relative;
+    top: -5px;    
+}
+
+
+/* -- Distanze -- */
+
+.distanze-list {
+    font-size: 12px;
+    padding: 10px 0px;
+    /* margin:0 -15px; background: #f5f5f5; border-bottom:1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.distanze-list .dist-listing {
+    width: 33%;
+    text-align: left;
+    display: inline-block;
+}
+
+.distanze-list .loc-listing img,
+.distanze-list .dist-listing img {
+    position: relative;
+    top: 3px;
+    left: -2px
+}
+
+.distanze-list .clear-320 {
+    float: left;
+    display: none;
+}
+
+
+/* -- Pulsantiera -- */
+
+.listino {
+    font-size: 10px;
+    margin: 0 0 0 10px !important;
+}
+
+.pulsantiera a:hover {
+    color: #fff;
+}
+
+.pulsantiera {
+    border-bottom: 1px solid #fff;
+}
+
+.pulsantiera .pulsante {
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    min-height: 72px;
+}
+
+.pulsantiera .pulsante:nth-child(3) {
+    border: none;
+}
+
+.pulsantiera2 {
+    border: 4px solid #f5f5f5;
+    background: #f5f5f5;
+}
+
+.pulsantiera2 .pulsante {
+    min-height: 10px;
+}
+
+.pulsantiera .pulsante .padding,
+.pulsantiera .pulsante a {
+    display: block;
+    padding: 15px;
+}
+
+.pulsantiera .pulsante input {
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    padding: 0;
+}
+
+.pulsantiera .pulsante .numero {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pulsantiera .pulsante img {
+    vertical-align: middle;
+    height: 25px;
+    width: auto;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.pulsantiera .pulsante.coupon {
+    border: none;
+}
+
+.pulsantiera .pulsante.whatsapp {
+    border: none;
+}
+
+.pulsantiera .pulsante.listino {
+    min-height: 1px;
+    border: none;
+}
+
+.pulsantiera .pulsante.lastminute a,
+.pulsantiera .pulsante.bg a,
+.pulsantiera .pulsante.coupon a,
+.pulsantiera .pulsante.offerte a {
+    padding: 0;
+    display: block;
+    color: #f54949;
+}
+
+.pulsantiera .pulsante.prenotaprima a {
+    padding: 0;
+    display: block;
+    color: #f54949;
+}
+
+.pulsantiera .pulsante.prenotaprima,
+.pulsantiera .pulsante.lastminute,
+.pulsantiera .pulsante.bg,
+.pulsantiera .pulsante.coupon,
+.pulsantiera .pulsante.offerte {
+    text-align: center;
+    font-size: 12px;
+    /*background: #fce9e9;*/
+    border: 4px solid #f5f5f5;
+}
+
+.pulsantiera2 .pulsante img {
+    margin: auto;
+}
+
+.pulsantiera2 .pulsante .img {
+    padding: 10px;
+    border: 1px solid rgba(209, 38, 35, 0.50);
+    display: block;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.30);
+}
+
+.pulsantiera .pulsante.offerte .testo,
+.pulsantiera .pulsante.bg .testo,
+.pulsantiera .pulsante.prenotaprima .testo,
+.pulsantiera .pulsante.lastminute .testo,
+.pulsantiera .pulsante.coupon .testo {
+    padding: 5px;
+    background: #f5f5f5;
+    display: block;
+    font-size: 12px;
+}
+
+.pulsantiera .pulsante.offerte .numero {
+    background: #f54949;
+}
+
+.pulsantiera .pulsante.bg .numero {
+    background: #f54949;
+}
+
+.pulsantiera .pulsante.lastminute .numero {
+    background: #f54949;
+}
+
+.pulsantiera .pulsante.coupon .numero {
+    background: #f54949;
+}
+
+.pulsantiera .pulsante.prenotaprima .numero {
+    background: #f54949;
+}
+
+.pulsantiera .pulsante.disabled {
+    background: #fff;
+}
+
+.pulsantiera .pulsante.disabled span {
+    color: #555;
+}
+
+.pulsantiera .pulsante.disabled img {
+    opacity: 0.4;
+}
+
+.pulsantiera2 .pulsante.disabled .img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* -- Header -- */
+
+.tofix {
+    -webkit-transition: top .25s ease;
+    -moz-transition: top .25s ease;
+    -ms-transition: top .25s ease;
+    -o-transition: top .25s ease;
+    transition: top .25s ease;
+}
+
+.fixed-pulsantiera .tofix {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    z-index: 10000;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.30);
+}
+
+.fixed-pulsantiera.open .tofix {
+    top: 50px;
+}
+
+.fixed-pulsantiera .margin-to-fix,
+.fixed-pulsantiera .pulsantiera2 {
+    margin-top: 76px;
+}
+
+.row-info-piscina {
+    margin: 0 -2px;
+}
+
+.row-info-piscina td,
+.row-info-piscina th {
+    background: #e4f5fc;
+    border-collapse: collapse;
+    margin: 0;
+    text-transform: lowercase;
+    text-align: left;
+    padding: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    line-height: 20px
+}
+
+.row-info-piscina td:first-letter {
+    text-transform: uppercase;
+}
+
+.row-info-piscina th:first-letter {
+    text-transform: uppercase;
+}
+
+.row-info-piscina td {
+    background: #fff;
+}
+
+.row-info-piscina tr:nth-child(even) td {
+    background: #ffffff;
+}
+
+.row-info-piscina tr:nth-child(odd) td {
+    background: #f5f5f5;
+}
+
+.row-info-piscina td.intestazione_tr {
+    background: #fff !important;
+    padding-top: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.row-info-piscina th {
+    width: 110px;
+}
+
+ @media (min-width: 450px) {
+
+    .item-listing-favorites {
+        right:50px;
+    }
+    
+    .gallery-hotel {
+        width: 100%;
+        
+    }
+
+    .gallery-hotel figure{ width: 50%; float: left; }
+    .gallery-hotel figure.small-gallery-image { float:left; width:25%;}
+    /*
+    #datihotel {
+        position: static;
+    }
+    .dati-hotel {
+        display: block;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .nome-hotel {
+        color: #222;
+        padding: 20px;
+        display: block;
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        width: 50%;
+        margin: 0;
+        z-index: 1000;
+        text-align: left;
+    }
+    .nome-hotel .item-name {
+        display: inline-block;
+        vertical-align: middle;
+        text-shadow: none;
+    }
+    .nome-hotel .item-name div.h1 {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    .nome-hotel .rating {
+        font-size: 10px;
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .pulsantiera .pulsante {
+        min-height: 0;
+    }
+    .pulsantiera .pulsante img {
+        display: inline;
+        margin: 0 5px 0 0;
+    }*/
+} 
+
+
+.chiusoTemp {
+    display: block;
+    background: #f44336;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 10px;
+    margin: -10px;
+    font-weight: bold;
+    text-align:center;
+}

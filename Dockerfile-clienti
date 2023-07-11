@@ -1,0 +1,53 @@
+FROM php:7.4-apache
+
+#COPY ./ /var/www/html/
+
+RUN apt-get update && apt-get install -y  \
+    curl \
+    g++ \
+    libbz2-dev \
+    libfreetype6-dev \
+    libicu-dev \
+    libjpeg-dev \
+    libmcrypt-dev \
+    libpng-dev \
+    libreadline-dev \
+    sudo \
+    unzip \
+    zip \
+    libmagickwand-dev \
+    nodejs \
+    npm \
+    --no-install-recommends \
+    && pecl install imagick \
+    && docker-php-ext-enable imagick opcache \
+    && docker-php-ext-install pdo_mysql \
+    && apt-get autoclean -y \
+    && rm -rf /var/lib/apt/lists/* 
+
+
+RUN docker-php-ext-install sockets
+
+
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# 2. Apache configs + document root.
+RUN echo "ServerName ia-er-clienti" >> /etc/apache2/apache2.conf
+
+
+# Update apache conf to point to application public directory
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+
+# Update uploads config
+RUN echo "file_uploads = On\n" \
+         "memory_limit = 1024M\n" \
+         "upload_max_filesize = 512M\n" \
+         "post_max_size = 512M\n" \
+         "max_execution_time = 1200\n" \
+         > /usr/local/etc/php/conf.d/uploads.ini
+
+# Enable headers module
+RUN a2enmod rewrite headers 

@@ -1,0 +1,10 @@
+  
+  /**
+   * LAYOUT Titoli menu
+   */	
+
+	@import 'include/config';
+	
+	.title-menu-main { display: inline-block; }
+	.title-menu { padding:0 calc($pad / 3); text-decoration: underline; }
+	.title-menu.selected { font-weight: bold; }

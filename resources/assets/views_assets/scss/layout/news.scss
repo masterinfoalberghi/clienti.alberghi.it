@@ -1,0 +1,16 @@
+  
+  /**
+   * LAYOUT News
+   */
+			
+	@import "../include/config";
+	.news_image { width:100%; height:auto; -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;}
+	.news_subtitle { color: $grigio-scuro; }
+	.new_title { text-shadow: 0 1px 5px rgba(0,0,0,0.5); text-shadow: $text-shadow; }
+	.news_spot {
+		
+		overflow: hidden;
+		cursor:pointer; 
+			
+	}
+	

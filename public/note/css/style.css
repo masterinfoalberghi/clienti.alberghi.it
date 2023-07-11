@@ -1,0 +1,352 @@
+:root {
+	--colore-testo-header:  rgb(255, 255, 255);
+	--ombra-testo: 3px 5px 6px rgba(0,0,0, 0.3);
+	--link-hover-color: #35A6E8;
+	--ombra-box:  2px 4px 5px rgba(0,0,0, 0.2);
+
+	--larghezza: 54rem;
+}
+
+
+body p, body .post-description {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1.post-title, a.post-title { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+
+/* SIDEBAR */
+
+.sidebar {
+	background: linear-gradient(#333, #5a5a5a);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+/* .box-info-sidebar { display: none; } link a infoalberghi in sidebar disattivo da desktop */
+
+.box-info-sidebar { 
+	margin-top: 1em;
+}
+
+.box-info-sidebar a { 
+	text-decoration: none;
+	border-bottom: 1px solid var(--link-hover-color);
+}
+.box-info-sidebar a:hover {
+	border-bottom: none;
+}
+
+@media screen and (max-width: 720px) {
+
+	.box-info-sidebar { 
+		display: block;
+		margin-top: 1em; 
+	}
+	.box-info-sidebar a { 
+		background-color: transparent;
+		color: white;
+		/* text-decoration: underline; */
+		border: 1px solid grey; 
+		padding: 5px 10px;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+	}
+}
+
+.content-subhead {
+  border-bottom: none;
+  margin: 0;
+}
+
+
+footer .pure-menu-horizontal ul { padding-left: 0px; }
+.pure-menu-horizontal { white-space: unset; }
+
+.brand-title {
+	background-image: url('../images/logo-ia.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+  color: var(--colore-testo-header);
+	text-shadow: var(--ombra-testo);
+	filter: drop-shadow(var(--ombra-testo));
+}
+
+.brand-title a { display: block; height: 82px; }
+
+@media screen and (max-width: 768px) {
+	.brand-title {
+		width: 80%;
+		margin: 0 auto;	
+	}
+}
+@media screen and (min-width: 1440px) {
+	.brand-title {
+		width: 80%;
+		margin-left: auto;
+	}
+}
+
+
+.brand-tagline {
+	/* mix-blend-mode: color-dodge; */
+	color: var(--colore-testo-header);
+	text-shadow: var(--ombra-testo);
+}
+
+
+
+
+/* POST CONTENT */
+
+.post-header, .post-description {
+	max-width: var(--larghezza);
+}
+
+.accordion-content {
+	padding: 1em 0.5em;
+}
+
+.post-meta {
+	line-height: 2em;
+}
+
+@media screen and (min-width: 720px) {
+	
+	.post-description a,
+	.homepage .post-title {
+		/* background: linear-gradient( to bottom, 
+								var(--link-hover-color) 0%, 
+								var(--link-hover-color) 100%
+		); */
+		background-position: 0 100%;
+		background-repeat: repeat-x;
+		background-size: 1px 1px;
+		color: #000;
+		text-decoration: none;
+		transition: background-size .2s;
+	}
+
+	.post-description a.leggi-di-piu,
+	.post-description a { color: #4d85d1; }
+
+	.post-description a:hover { color: whitesmoke; }
+
+	.post-description a:hover,
+	.homepage .post-title:hover {
+		background-size: 4px 52px;
+	}
+
+}
+
+
+/* IMMAGINI: sono responsive se hanno #full nel loro src */
+
+img[src*="#full"] {
+	width: 100%;
+	object-fit: cover;
+}
+
+img[src*="#small"] {
+	height: 550px; 
+	object-fit: cover;
+}
+
+img.centered,
+img.destra,
+img.sinistra {
+	margin: 1em auto;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 915px) {
+	figure {
+		margin: 32px calc(50% - 50vw);
+		max-width: 100vw;
+		width: 100vw;
+	}
+}
+
+@media screen and (min-width: 915px) {
+	img.destra {
+		float: right;
+		margin-right: -5em;
+		margin-left: 1.5em;
+		max-width: calc( var(--larghezza) / 2 );
+	}
+	img.sinistra {
+		float: left;
+		margin-right: 1.5em;
+		max-width: calc( var(--larghezza) / 2 );
+	}
+}
+
+@media screen and (min-width: 1260px) {
+
+	img.sinistra.poligono {
+		--poligon: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+	}
+	img.destra.poligono {
+		--poligon: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 8% 50%);
+	}
+
+	figure {
+		margin: 0;
+		filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.25));
+	}
+	img.poligono {
+		margin:.4em 0 0 0;
+
+		clip-path: var(--poligon);
+		shape-outside: var(--poligon) border-box;
+		shape-margin: 0.8em;
+	}
+}
+
+
+
+/* STYLE PER LA TENDA (ACCORDION) */
+
+details {
+  overflow: hidden;
+  margin-top: 0.55em;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333;
+  border-radius: 3px;
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+  padding: .5em .5em .5em .7em;
+  background: #ededed;
+  color: #2b2b2b;
+  border-radius: 3px 3px 0 0;
+}
+/* details summary::before {
+	content: "\27A4 \00a0\00a0"
+} */
+
+details:not([open]) summary:hover,
+details:not([open]) summary:focus {      
+  background: #f6f6f6;
+  color: #454545;
+}
+
+details[open] summary {
+  border: 1px solid transparent;
+  background: #38A6E9;
+  color: #ffffff;
+}
+
+details main {
+  padding: 1em 2.2em;
+}
+
+details.single { border: none; }
+details.single summary {
+	background: transparent;
+}
+details[open].single summary {
+  border: 1px solid transparent;
+  background: #38A6E9;
+  color: #ffffff;
+}
+
+
+/* Animazione quando si apre */
+details[open] summary ~ * {
+  animation: swoshhh .5s ease-in-out;
+}
+
+@keyframes swoshhh {
+  0%		{opacity: 0; margin-left: -10px}
+  100%	{opacity: 1; margin-left: 0px}
+}
+/* Paragrafo con sfondo whatsapp */
+
+.con-sfondo-whatsapp {
+	background-image: url('../images/sfondo-whatsapp.jpg');
+	background-position: center;
+	background-repeat: repeat;
+}
+
+@media screen and (min-width: 1114px) {
+	.con-sfondo-whatsapp {
+		padding: 0 2em;
+		margin: 0 8em;
+	}
+}
+
+.con-sfondo-whatsapp p {
+	font-size: 16px;
+	padding: 6px;
+	padding-inline-start: 10px;
+	margin: 16px 20px 0px;
+
+	display: inline-block;
+	border-radius: 8px;
+	box-shadow: var(--ombra-box);
+	background-color:#E2FFC7 ;
+}
+.con-sfondo-whatsapp p:last-child {
+	margin-bottom: 20px;
+}
+
+/* Colori dei tag: */
+
+/* DEFAULT */
+
+[class*=" post-tags-"] {
+	background: #587291;
+} 
+
+.post-tags-covid-19 {
+    background: #A40E4C;
+}
+.post-tags-bonus,
+.post-tags-turismo,
+.post-tags-viaggi,
+.post-tags-vaccini {
+    background: #4d85d1;
+}
+.post-tags-decreto.riaperture,
+.post-tags-Europa,
+.post-tags-dpcm {
+    background: #8156a7;
+}
+.post-tags-sicurezza {
+    background: #df2d4f;
+}
+.post-tags-hotel {
+    background: #26A69A;
+}
+.post-tags-marketing {
+    background: #587291;
+}
+.post-tags-whatsapp,
+.post-tags-green,
+.post-tags-certificazione.verde,
+.post-tags-certificato.verde.digitale,
+.post-tags-ambiente {
+    background: #24CC63;
+}
+.post-tags-spiaggia,
+.post-tags-sostenibile {
+    background: yellowgreen;
+}
+
+.post-tags-riaperture 
+.post-tags-parchi {
+    background: #F68E5F;
+}
+.post-tags-vacanze {
+    background: #EE6055;
+}
+.post-tags-bambini {
+    background: #C179B9;
+}

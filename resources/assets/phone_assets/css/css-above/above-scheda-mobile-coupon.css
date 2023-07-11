@@ -1,0 +1,36 @@
+	
+	h1 { font-size: 22px; font-weight: normal;}
+	h2,h3 { font-weight: 400;color: #195c8a; text-transform: uppercase; text-align: center;  }
+	.rating { font-size: 14px; position:relative; top:-5px; display: inline-block; vertical-align: middle; }
+	a { color: #35a6e8;}
+	a:hover { color: #6ac0d8; }
+	#datihotel { padding:0 15px;}
+	
+	#daticoupon { padding:15px; border-top:1px solid rgba(0, 0, 0, 0.1);  border-bottom:1px solid rgba(255, 255, 255, 0.5);  }
+	#daticoupon h2 { margin:0 0 10px 0; background: #195c8a; color:#fff; margin:-15px -15px 15px -15px;  padding: 15px;  }
+	#daticoupon ul, 
+	#daticoupon li { margin:0; padding:0; list-style: none; display: block; padding-bottom: 4px; text-transform: lowercase;}
+	#daticoupon li { padding: 3px 5px 10px 35px;  position: relative; }
+	#daticoupon li img { vertical-align: middle; position: absolute; top:0; left:0;  width:24px; height: auto;}
+	
+	/* -- coupon -- */
+	
+	#coupon {padding:30px 5px; }
+	#coupon h3 { padding:0; margin:0px; color:#fff; font-size: 28px; }
+	#coupon p { margin:0; }
+	.coupontesto { padding:0 0 15px 0; text-align: center; margin:0;  }
+	
+	.chiusoTemp {
+		display: block;
+		background: #f44336;
+		color: #fff;
+		text-transform: uppercase;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-size: 12px;
+		padding: 10px;
+		margin: -10px;
+		font-weight: bold;
+		text-align:center;
+	}

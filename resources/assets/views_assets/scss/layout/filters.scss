@@ -1,0 +1,35 @@
+  
+  /**
+   * LAYOUT Filtri
+   */
+	
+	.filters-content {  -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; padding: calc($pad / 2); background: $grigio-chiaro; margin-bottom: calc($pad / 3); border:1px solid $grigio-chiaro-odd;}
+	.filters-map { max-width: 290px; position: relative; }
+	.filters-map-button { position: absolute; top:50%; left:50%; width:110px; height:32px; margin:-15px 0 0 -55px;}
+	
+	.filters-container { background: #fff; padding-top: calc($pad / 4); height:82px; }
+	.filter-container a { margin:0;   display:inline-block; cursor: pointer; margin:3px 0; padding: 0 calc($pad / 4) }
+
+	.filter-container span { padding-right: calc($pad / 2)0; margin-right: calc($pad / 2)0; border-right:1px solid $grigio-medio-chiaro}
+
+	.filter-container a.price_min { border:none; }
+	
+	.filter-container a.selected {
+		border:none; 
+		background: rgba(102, 102, 102, 0.150);
+		text-decoration: none;
+		font-size: $font-size; 
+	 	-webkit-border-radius: $raggio;
+	 	-moz-border-radius: $raggio;
+	 	border-radius: $raggio;
+
+	}
+
+	.filter-container a.selected:hover { color: $blu}
+	
+	.tooltip-filters ul,
+	.tooltip-filters li { padding:0; margin:0; list-style: none; }
+	.tooltip-filters li a { display: block; width:180px; font-size: $font-size; padding:calc($pad / 4); text-decoration: none; }
+	.tooltip-filters li a:hover  { background: $chiaro; color:$scuro;  }
+	
+	.wish form { margin-bottom: 0; }

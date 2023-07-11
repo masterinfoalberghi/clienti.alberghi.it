@@ -1,0 +1,25 @@
+	
+	/**
+	 * Homepage
+	 */
+
+	@import 'include/config';
+	@import 'layout/evidenza';
+	@import 'layout/box';
+	@import 'layout/offers';
+	@import 'layout/news';
+	
+	.container_home { position: relative; }
+	// #in_evidenza { position: absolute; top:0; right:0; }
+	section h2.visible { display: block; padding-top: $pad; text-align: center;}
+	.tablet #in_evidenza { position: static}
+	
+	.stuck_menu #page { margin-top:0; }
+
+
+	.alert-home {
+		position: relative; 
+		margin-top: 25px!important; 
+		margin-bottom: 0px!important;
+	}
+	

@@ -1,0 +1,109 @@
+	
+	/**
+	 * Content
+	 */	
+	
+	@import 'include/config';	
+	@import "layout/title-menu";
+	@import "layout/rating";
+	
+	@import "content/content-item-listing";
+	@import "content/content-normal";
+	@import "content/content-left";
+	@import "content/content-right";
+	@import "content/content-over";
+	@import "content/content-barusso";
+	@import "content/content-gallery";
+	@import "content/content-mappa";
+
+	
+	.main-content-container {  position: relative; }
+	
+	.main-content h1,
+	.main-content h2 { 
+		
+		font-size: 30px;
+		line-height: 38px; 
+		margin:0; 
+		padding:0; 
+		
+	}
+	
+	.class-cms-pagina-statica section h2 { display:block; /* color: $cyano; */ margin-bottom: calc($pad / 6); }
+	
+	.main-content h3 { 
+		
+		font-size: 20px;
+		line-height: 28px; 
+		font-weight: 400;
+		/*padding-top:$pad; */
+		padding-bottom: calc($pad / 3);
+		/*color: $header;*/
+		color: $header;
+		
+		// text-transform: lowercase;
+		
+	}
+	
+	.main-content h4 { 
+		
+		font-size: 16px;
+		line-height: 26px; 
+		padding-top:0; 
+		color: $grigio;
+		text-transform: lowercase;
+		
+	}
+	
+	.main-content h4:first-letter,
+	.main-content h3:first-letter {
+		text-transform: uppercase;
+	}
+	
+	.main-content-image { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; 
+		height: 100%; 
+		max-height: 500px;  
+		width:auto; 
+		margin-bottom: calc($pad / 2);
+		
+		
+	}
+	
+	.main-content-image-container {
+		
+		position: absolute;
+		top:0; 
+		bottom:0; 
+		overflow: hidden;
+		display: block;
+		
+		
+	}
+	
+	
+	.main-content-text a { text-decoration: underline; color: $cyano; }
+	
+	
+	.main-content-text.top {
+		
+		padding: calc($pad / 2) 0 0 ;
+		
+	}
+	
+	.listing-content .main-content-text.top p {
+		
+		font-size: 12px; 
+		line-height: 20px; 
+		
+	}
+	
+	.main-content-text-2-col {
+	
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		
+	}
+	

@@ -1,0 +1,51 @@
+  /**
+   * LAYOUT Covid
+   */
+
+
+  div#covid {
+      background: $deep;
+  }
+
+  #serviziCovid {
+      padding: 15px;
+      border-radius: 3px;
+      border: 5px solid #ddd;
+      margin-top: -5px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      column-fill: auto;
+
+  }
+
+  .serviziCovid {
+      margin-bottom: 15px;
+      -webkit-column-break-inside: avoid;
+      /* Chrome, Safari, Opera */
+      page-break-inside: avoid;
+      /* Firefox */
+      break-inside: avoid;
+      /* IE 10+ */
+  }
+
+  .serviziCovid li {
+      margin: 0;
+      list-style: none;
+      padding: 0 0 0 30px;
+      position: relative;
+      line-height: 24px;
+  }
+
+  .serviziCovid b {
+      margin-bottom: 10px;
+      display: block;
+  }
+
+  .serviziCovid i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #8CC152;
+  }

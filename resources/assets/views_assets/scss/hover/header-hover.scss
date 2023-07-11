@@ -1,0 +1,15 @@
+	
+	/**
+	 * HOVER Header
+	 */		
+
+	@import "../include/config"; 
+	
+	nav ul#menu-macrolocalita>li:hover { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; background: $blu; cursor: pointer;}
+	nav ul#menu-macrolocalita>li:hover ul { display: block; position: absolute; width:250px; top:31px; left:0px; z-index: 1110; background: $blu; padding:calc($pad / 6) 0 ;}
+	nav ul#menu-macrolocalita>li:hover ul li { display: block;  }
+	nav ul#menu-macrolocalita>li:hover ul li a { padding: 2px; display: block;  padding:2px calc($pad / 2); }
+	nav ul#menu-macrolocalita>li:hover ul li a:hover {  -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; background: $hightlight;  }
+	nav ul#menu-macrolocalita li:hover a:hover .badge { background: none; }
+	#changeLanguageLink li a:hover { background: $hightlight; }
+	

@@ -1,0 +1,58 @@
+	
+	/**
+	 * CONTENT over
+	 */	
+
+	 .main-content-container.over { 
+		
+		width:100%; 
+		min-height: 380px; 
+		position: relative; 
+		display:block; 
+		
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		
+		background-position: bottom center;
+		background-repeat: no-repeat; 
+				
+	}
+	
+	.over .main-content-text {
+		
+		color: $chiaro;
+		z-index: 5; 
+		margin: $pad * 2 0;
+		
+	}
+	
+	.over .main-content-text h2,
+	.over .main-content-text h1 { 
+		
+		color: #fff;
+		display: inline-block; 
+		background: $scuro;
+		padding: calc($pad / 4) calc($pad / 2); 
+		
+	}
+	
+	.over .main-content-text h1 { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; } 
+		
+	
+	.main-content-container.over .main-content-text a { color: $chiaro; opacity: 0.8; }
+	
+	.over .main-content-text h3 {
+		color: $grigio-chiaro;
+	}
+	
+	.over .main-content-text-p {
+		
+		margin-top: calc($pad / 6); 
+		background: $grigio-scuro;
+		padding: calc($pad / 4) calc($pad / 2); 
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;	
+		
+	}
+	

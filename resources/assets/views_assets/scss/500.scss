@@ -1,0 +1,14 @@
+	
+	/**
+	 * 500
+	 */	
+
+	@import 'include/config';
+	
+	.alert500 { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;  padding: $pad $pad*3; background: rgba(248, 67, 54, 0.10);   margin-top: $pad;}
+	.alert500 h1 { font-size:20px; color: $rosso; font-weight:normal; display: inline-block; line-height: 1em; vertical-align: middle; padding:0; }
+	.alert500 p { padding-left: 70px; }
+	.alert500 div { background:#fff; padding: calc($pad / 2); font-weight: bold;  }
+	.alert500 span { padding: calc($pad / 4) ;  display: block; font-weight: normal; }
+	.alert500 span:nth-child(odd) { background: rgba(248, 67, 54, 0.05);   }
+	.alert500 img { line-height: 1em; vertical-align: middle; margin-right: calc($pad / 2); }

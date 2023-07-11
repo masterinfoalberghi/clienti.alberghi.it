@@ -1,0 +1,18 @@
+	
+	/**
+	 * Thankyou page
+	 */		
+
+	@import 'include/config';
+		
+	.warningTY { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;  padding: $pad $pad*3; background: rgba(99, 166, 37, 0.15); }
+	.warningTY h1,
+	.warningTY .h1 { color: $verde; font-weight:normal; display: inline-block; line-height: 1em; vertical-align: middle; padding:0; max-width: 70%; }
+	.warningTY .h1 { font-size: 18px; }
+	.warningTY p { color: $verde-scuro; padding-left: 52px; }
+	.warningTY p a { text-decoration: underline; color: $verde-scuro; font-weight: bold; }
+	.warningTY.error h1,
+	.warningTY.error .h1 { color: $rosso; }
+	.warningTY.error { background:rgba(248, 67, 54, 0.17)}
+	.warningTY.error  p { color: $rosso; }
+	.warningTY.error p a { color: $rosso;}

@@ -1,0 +1,315 @@
+/**
+* LAYOUT Preventivo
+*/
+
+/**
+* Bottoni
+*/
+
+#sidebar-preventivo h4,
+#sidebar-preventivo h2,
+#sidebar-preventivo h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: $chiaro;
+	text-align: center;
+	display: block;
+	padding: (calc($pad / 6)) 0 0;
+}
+
+#sidebar-preventivo h2 {
+	font-size: 30px;
+}
+
+#sidebar-preventivo h3 {
+	font-size: 18px;
+}
+
+#sidebar-preventivo h4 {
+	font-size: 12px;
+	color: $grigio-medio;
+}
+
+#sidebar-preventivo header {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background: $deep;
+	margin: (calc($pad / -2)) (calc($pad / -2)) 0 (calc($pad / -2));
+	padding: $pad calc($pad / 2) calc($pad / 2);
+	display: block;
+	-webkit-border-radius: $raggio $raggio 0 0;
+	-moz-border-radius: $raggio $raggio 0 0;
+	border-radius: $raggio $raggio 0 0;
+}
+
+#sidebar-preventivo header h2 {
+	font-size: 40px;
+}
+
+/**
+* Links
+*/
+
+#sidebar-preventivo .label_checkbox input {
+	vertical-align: middle;
+}
+
+#sidebar-preventivo .label_checkbox a {
+	color: $chiaro;
+	text-decoration: underline;
+}
+
+/**
+* Form 
+*/
+
+#sidebar-preventivo .select_multiline,
+#sidebar-preventivo .select_icon {
+	display: block;
+	background: #fff;
+	min-height: 34px;
+	-webkit-border-radius: $raggio;
+	-moz-border-radius: $raggio;
+	border-radius: $raggio;
+	position: relative;
+}
+
+#sidebar-preventivo .select_icon i {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+}
+
+#sidebar-preventivo .select_icon i.icon-down-open {
+	right: 5px;
+	left: auto;
+}
+
+#sidebar-preventivo input[type=text],
+#sidebar-preventivo input[type=email],
+#sidebar-preventivo textarea,
+#sidebar-preventivo select {
+	border: none;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-ms-appearance: none;
+	/* get rid of default appearance for IE8, 9 and 10*/
+	margin-bottom: 0px;
+	margin-left: 34px;
+	width: calc(100% - 60px);
+	height: 34px;
+
+}
+
+#prefix_input {
+	margin-left: 10px !important;
+	width: calc(100% - 38px) !important;
+}
+
+#phone_input {
+	margin-right: 10px !important;
+	width: calc(100% - 48px) !important;
+}
+
+#sidebar-preventivo textarea {
+	width: 100%;
+	padding: 10px;
+	height: 77px;
+	margin: 0;
+	resize: vertical;
+}
+
+#sidebar-preventivo input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: #fff;
+	border: 1px solid $bordi;
+	height: 16px;
+	width: 16px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+}
+
+#sidebar-preventivo input[type="checkbox"]:checked {
+	background: #fff url("//static.info-alberghi.com/images/check.jpg") center center no-repeat;
+}
+
+#sidebar-preventivo .meal_plan_input {
+	padding: 5px 30px 5px 36px;
+}
+
+#sidebar-preventivo .open .meal_plan_input {
+	height:58px;
+}
+
+#sidebar-preventivo .date_input a {
+	padding: 5px 30px 5px 30px;
+	font-weight:normal;
+}
+
+#sidebar-preventivo .open .date_input {
+	opacity: 0.5;
+}
+
+#sidebar-preventivo .open .date_input.open {
+	opacity: 1;
+}
+
+#sidebar-preventivo .select_multiline .options_multiline {
+	display: none;
+	background: #fff;
+	padding: 5px 5px 5px 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 1em;
+
+
+}
+
+#sidebar-preventivo .select_multiline.open .options_multiline {
+	display: block;
+}
+
+
+#sidebar-preventivo .options_multiline label {
+	display: block;
+	padding: 3px 0;
+}
+
+#sidebar-preventivo .options_multiline label.disabled { background: #f5f5f5; }
+
+#sidebar-preventivo .options_multiline input {
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+#sidebar-preventivo .arrivo_datepicker,
+#sidebar-preventivo .partenza_datepicker {
+	width: 100%;
+	top: -2px;
+}
+
+#sidebar-preventivo .label_checkbox input { position: relative; top: -2px;  }
+#sidebar-preventivo .privacy_checkbox { position: relative; height: 50px; }
+#sidebar-preventivo .privacy_checkbox .label_checkbox { padding-left:30px; display: block; line-height: 16px; color: rgba(255,255,255,.7); }
+#sidebar-preventivo .label_checkbox { color: rgba(255,255,255,.7); font-size:13px; }
+#sidebar-preventivo .privacy_checkbox .label_checkbox input{ position: absolute; top:0; left:0;  }
+
+#sidebar-preventivo .eta_select { 
+	padding: 6px 30px 6px 6px;
+	width:100%;
+	background: url(//static.info-alberghi.com/images/down.jpg) right center no-repeat #fff; 
+	margin-left: 0px; 
+	border: 1px solid #ddd;
+    margin-bottom: 3px;
+}
+
+#sidebar-preventivo .pannello_bambini {
+	padding:10px;
+	background: rgba(255,255,255,0.8);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin:10px 0; 
+	position: relative;
+}
+
+#sidebar-preventivo .pannello_bambini:before {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid rgba(255,255,255,0.8);
+	position: absolute;
+	top:-10px;
+	right:8px;
+	content: " ";
+  }
+
+  #sidebar-preventivo .pannello_bambini label {
+	color:#444;
+	width:100%;
+	display: block;
+}
+
+#sidebar-preventivo .room { 
+		
+	margin: -1px (calc($pad / -2)) 0; padding: (calc($pad / 2));
+	position: relative;
+	border-bottom: 1px dashed $chiaro
+
+}
+
+#sidebar-preventivo .rooms {  padding: (calc($pad / 3)) 0; }
+
+/*
+	.select_singleline,
+	.select_multiline,
+	#sidebar-preventivo input[type="text"],
+	#sidebar-preventivo input[type="email"] { 
+		width:100%;  
+		border:none; 
+		position: relative; 
+	}
+	
+	.select_multiline .evidenziato { margin-left: -calc($pad / 6); margin-top: calc($pad / 6); display: inline-block;  }
+	#sidebar-preventivo input,
+	#sidebar-preventivo textarea,
+	#sidebar-preventivo select { border:none; margin-bottom: 0px; }
+	
+	
+	#sidebar-preventivo textarea { width:100%; }
+	#sidebar-preventivo select { width:100%; }
+	.col-sm-6 .select_multiline { width:99%; }
+	
+	/**
+	 * Bottone
+	 * /
+	 
+
+	.info { color: $grigio-medio; display: block; font-weight: normal; text-transform: uppercase; }
+	
+	.room { 
+		
+		margin: -1px (calc($pad / -2)) 0; padding: (calc($pad / 2));
+		position: relative;
+		//background: #FF5722;
+		// border-top: 1px solid $chiaro;
+		border-bottom: 1px dashed $chiaro
+
+	}
+	
+	.rooms {  padding: (calc($pad / 3)) 0; }
+	.room label { font-size:12px;color: white; display: block }
+	.label_checkbox span { color: #fff; font-weight: normal; }
+
+	.room label.camera_label { text-align: center;}
+	.room h4 b { color:#fff !important; }
+	
+	.select_icon select { margin-left:18px; display: inline-block; border:none; width: calc(100% - (24px + 2px)) !important;  }
+	.select_icon.bambini select { width: 47px !important; }
+
+	#attendi { color:#fff; text-align: center;    }
+
+	@media (min-width: 768px) and (max-width: 1024px) { 	
+	
+		.rooms {  padding: (calc($pad / 3)) 0; margin:0; }
+		.rooms i { display:none;}
+
+	}
+
+	@media (max-width: 768px) {
+		.margin-left-3 { margin:0; }
+	}
+	*/

@@ -1,0 +1,136 @@
+  /**
+   * LAYOUT Footer
+   */
+
+  @import "../include/config";
+
+  #footer {
+  	padding: $pad 0;
+  	background: $grigio-medio-scuro;
+  	color: $chiaro;
+		text-align: center;
+  }
+
+  #footer_hotel {
+  	padding: $pad 0;
+  	background: $grigio-medio-scuro;
+  	color: $chiaro;
+  	margin: auto;
+  	text-align: center;
+  }
+
+  #footer p {
+  	font-size: small;
+  }
+
+  #footeraside {
+  	background: $scuro;
+  	padding: $pad 0;
+  }
+
+  #footeraside h4 {
+  	color: $grigio-medio;
+  	text-transform: uppercase;
+  }
+
+  #footeraside nav ul li {
+  	display: block;
+  	padding: 0 0 2px;
+  }
+
+  #footeraside nav ul li a {
+  	color: $chiaro;
+  }
+
+  #footeraside nav ul li a:first-letter {
+  	text-transform: uppercase;
+  }
+
+  #footeraside nav ul li a:hover {
+  	color: $chiaro;
+  	text-decoration: underline;
+  }
+
+  #footeraside nav ul li small {
+  	color: $grigio;
+  	margin-right: $pad;
+  	display: block;
+  	line-height: 14px;
+  	text-decoration: none;
+  }
+
+  #footeraside nav ul li .social {
+  	-webkit-border-radius: $raggio;
+  	-moz-border-radius: $raggio;
+  	border-radius: $raggio;
+  	margin-right: calc($pad / 4);
+  	width: 30px;
+  	height: 30px;
+  	display: inline-block;
+  	line-height: 30px;
+  	text-align: center;
+  	color: $chiaro;
+  }
+
+  #footeraside nav ul li .social.fb {
+  	background: $blu-facebook;
+  }
+
+  #footeraside nav ul li .social.tw {
+  	background: $azzurro-twitter;
+  }
+
+  #footeraside nav ul li .social.gp {
+  	background: $rosso-google;
+  }
+
+  #footeraside nav ul li .social.dn {
+  	background: $grigio;
+  }
+
+  /**
+	 * Newsletter
+	 */
+
+  #newsletter_container {
+  	background: $grigio-chiaro;
+  	padding: $pad 0;
+  }
+
+  .newsletter_title {
+  	font-size: 24px;
+  	font-weight: normal;
+  	color: $rosso;
+  }
+
+  .newsletter_text {
+  	display: inline-block;
+  }
+
+  #newsletter_email {
+  	padding: calc($pad / 2);
+  	padding-left: 22px;
+  	-webkit-border-radius: 30px; 
+  	-moz-border-radius: 30px;
+  	border-radius: 30px;
+  	background: #fff;
+  	border: 1px solid #ddd;
+  	width: 100%;
+	font-size: 13px;
+	outline:none;
+  }
+
+  .newsletter_content_input { 
+  	position: relative;
+  }
+
+  .newsletter_content_input i {
+  	position: absolute;
+  	top: 12px;
+  	right: 20px;
+  	font-size: 18px;
+  	color: $grigio-medio-chiaro;
+  }
+
+  // .label_checkbox span { color: $color!important; }
+  // .label_checkbox a 	 { text-decoration: underline; vertical-align: top; }	

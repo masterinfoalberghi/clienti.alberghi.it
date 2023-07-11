@@ -1,0 +1,1261 @@
+/**
+ *
+ * Apply Here your Custom CSS
+ *
+*/
+
+
+/* 
+Content:
+--------
+
+0. Overwrite Neon
+
+1. Gallery sortable images 
+
+2. Bottone menu sx
+
+3. Offerte
+
+4. Listino standard
+
+5. Amministrazione
+
+*/
+
+/* */
+.daterange-inline {
+    width: 90%;
+}
+
+.falseclick { position: relative; }
+
+.falseclick a.del_servizo_privato_all { 
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    color: #cc2424;
+    background: #fff;
+    font-size: 13px;
+}
+
+.falseclick a { position: absolute; top:-10px; right:-10px; color:#fff; background: #222; width:20px; height:20px; line-height: 20px; text-align: center; 
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hasDatepicker { padding:5px; height:33px; line-height: 33px; }
+
+
+.falseclick,
+.click_2,
+.clickListing,
+.click { border:1px solid #ddd; height:33px; line-height: 33px; padding:0 5px; background: #fff;}
+
+.click_readonly { border:1px solid #ddd; height:33px; line-height: 33px; padding:0 5px; background: #fff;}
+
+.falseclick input,
+.click_3 input,
+.click_2 input,
+.clickListing input,
+.click input{ width:100% !important; background:#fff !important; resize:both; outline: none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;border:none !important;}
+
+
+.click:hover {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+
+
+/* menu sx l'hotel del gruppo corrente */
+.page-container .sidebar-menu #main-menu li ul > li > a.no_hover:hover {
+    background-color: #2b303a;
+}
+.page-container .sidebar-menu #main-menu li a.no_hover:hover {
+    color: #aaabae;
+}
+
+
+div.alert blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+div.alert blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+div.alert blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* Gallery sortable images */
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 50%;*/
+}
+
+#contentLeft.activeOrder li:not(.ui-sortable-helper) {
+    cursor: move;
+}
+
+html>body #sortable li {
+    background-color: #f6f6f6;
+    border: 1px solid #aaa;
+    width: 350px;
+    height: 180px;
+    float: left;
+}
+
+.moderato 
+    {
+    border: 2px solid #91f091 !important;
+    }
+
+.non_moderato 
+    {
+    border: 2px solid #ea1b1b !important;
+    }
+
+.min-h 
+{
+    min-height: 200px !important; 
+}
+
+#sortable li {
+    margin: 5px;
+    padding: 5px;
+    height: 110px;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+
+.sortable {
+    cursor: default;
+}
+
+.sortable .panel-defualt{
+    cursor: pointer;
+}
+
+.caption.cliente {
+    clear: both;
+    padding-top:10px;
+    width: 100%;
+    text-align: center;
+}
+
+.caption.cliente input[type="text"]{
+    padding-left:5px;
+}
+
+#immagine_agg_del,
+.immagine_agg_img img {
+    float: left;
+    margin-right: 30px;
+    width: 130px;
+	height:auto;
+}
+
+.immagine_agg_img.big img {
+	width:100%; 
+}
+
+.immagine_agg_del{
+    /*float: left;*/
+    height: 65px;
+    padding-top: 7px;
+}
+
+.immagine_gallery_list {
+    padding: 7px; background: #fff; margin:-5px -5px 5px; border-bottom: 1px solid #ddd; position: relative;
+}
+
+
+.check_del {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+
+.check_del > input[type="checkbox"] {
+    width:19px;
+    height:19px;
+}
+
+
+div#delete_gallery, div#img_listing {
+	height: 30px;
+	margin:0 0 30px 0;
+}
+
+
+div.listing {
+    margin-top: 5px;
+}
+
+div.listing-cliente {
+    position: absolute; 
+    top: 1px;
+    right: 1px;
+    background-color:rgb(204, 36, 36); 
+    color: #fff;
+    padding: 1px 10px;
+}
+
+
+
+
+
+
+
+
+
+/* FINE - Gallery sortable images */
+
+
+
+/* Override css neon per mettere a posto il bottone della ricerca nel menu du sx: SACCO; */
+
+.twitter-typeahead .ricerca-hotel {
+    margin-bottom: -20px;
+    height: 34px;
+}
+/* FINE Override css neon per mettere a posto il bottone della ricerca nel menu du sx: SACCO; */
+
+
+
+
+/* Offerte */
+
+.message-box {
+    text-align: center;
+    padding: 5px;
+    color: #545454;
+    width: 80%;
+    font-size: 15px;
+    margin: 15px auto 45px;
+}
+
+.info {
+    background-color: #f7fafd;
+    border: 2px solid #b5d3ff;
+}
+
+.danger {
+    background-color: #ffc9c9;
+    border: 2px solid #ac1818;
+    color:#ac1818;
+}
+
+
+.caratteri_rimasti {
+    margin-right: 0px;
+    border: 1px solid #fff;
+    text-align: center;
+    color:#333;
+}
+
+td.online {
+    color: green;
+    font-weight: bold;
+}
+
+td.offline {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* classe ipovedenti per la Favi */
+select.ipo {
+    font-size: 18px;
+    padding: 5px;
+    height: 40px;
+}
+
+
+/* FINE -Offerte */
+
+
+
+/* Listino standard */
+
+.click, .data_listino, .click_2, .click_3, .clickListing, .del_servizo_privato, .del_servizo_privato_all {
+    cursor: pointer;
+}
+
+
+.click_3:hover {
+    background-color: red;
+}
+
+.click_2:hover, .clickListing:hover {
+    background-color: #ffefa4;
+}
+
+.del_servizo_privato {
+    font-size: 14px;
+}
+
+div.clickListing {
+    width: 20%;
+    float: left;
+    min-height: 30px;
+}
+
+
+span.metri {
+    display: block;
+    float: left;
+    width: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+ .data_listino {
+    border: 0;
+    margin: 0;
+    margin-top: -7px;
+    padding: 0
+ }
+
+
+ .float {
+    float: left;
+    margin: 20px;
+    margin-top: 100px;
+ }
+
+
+ td.last-right {
+    border: 1px solid #fff !important;
+
+ }
+
+ .prezzo {
+    float: left;
+    clear: both;
+    margin-bottom: 5px;
+ }
+
+table.disattiva {
+    border: 2px solid #b11b1b !important;
+ }
+
+ .prezzo_min, .prezzo_max {
+    margin-right: 20px;
+    z-index: 1!important;
+ }
+
+ .click_p_max {
+    margin-top:5px;
+ }
+
+
+ .nobg {
+    background-color: transparent !important; 
+ }
+
+ .border {
+    border: 1px solid;
+ }
+
+/* FINE - Listino standard */
+
+
+/* Amministrazione */
+
+/* Logo */
+.page-container .sidebar-menu .logo-env > div {
+    font-size: 20px;
+}
+
+#label_impersonifica_hotel {
+    display: none;
+}
+
+.tal {
+    text-align: left !important;
+}
+
+.form-group-coupon {
+    margin-left: 95px !important;    
+}
+
+
+table#elenco_coupon tr {
+    min-height: 15px;
+}
+
+table#elenco_coupon td#utilizzati a {
+    text-align: center;
+    color: #d42020;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #eee;
+}
+
+table#elenco_coupon td#utilizzati a:hover {
+    background-color: #fff;
+}
+
+
+blockquote.blockquote-gold p, blockquote.blockquote-warning p, blockquote.blockquote-gold small, blockquote.blockquote-warning small {
+    color: #b7a96a;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.page-container .main-content h2 span.home {
+    font-size: 40px !important;
+    margin-bottom: 20px;
+}
+
+
+blockquote.blockquote-orange {
+    background: #febd7d;
+    border: 1px solid #ff9326;
+    border-left-width: 5px;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 5px;
+    -moz-background-clip: padding;
+    border-radius: 3px;
+    background-clip: padding-box;
+    color: #584b0d;
+}
+
+
+blockquote.blockquote-orange p {
+    font-size: 16px;
+    color: #333;
+    color: #b7a96a;
+}
+
+blockquote.blockquote-orange p strong {
+    font-size: 16px;
+    color: #584b0d;
+}
+
+blockquote.blockquote-orange small {
+    font-size: 16px;
+    color: #333;    
+}
+
+
+#mesi_select {
+    height: 210px;
+}
+
+#mesi_select option {
+    margin:0;
+    font-size: 13px;
+}
+
+.con_bottoni_in_alto {
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+
+.form-control {
+    border: 1px solid #bbb;
+}
+
+
+
+/* tabella stats raggruppamenti per hotel*/
+
+table.inner-table {
+   
+}
+
+table.inner-table > tbody > tr > td{
+    padding: 15px;
+    text-align: right;
+    padding: 8px;
+}
+
+
+.tt-suggestion p {
+    overflow: auto;
+    height: auto;
+}
+
+.tt-suggestion {
+    padding: 8px 12px;
+}
+
+
+/* elenco offerte da approvare */
+
+
+div.offerta_da_approvare {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    width: 90%;
+    position:relative;
+}
+
+div.offerta_da_approvare.offerta {
+    border: 1px solid #639a48;
+}
+
+div.offerta_da_approvare.lastminute {
+    border: 1px solid #f54949;
+}
+
+div.offerta_da_approvare.offerta_pp {
+    border: 1px solid #ff9326;
+}
+
+div.offerta_da_approvare.offerta_bb {
+    border: 1px solid #1fb0e1;
+}
+
+div.offerta_da_approvare p {
+    width: 80%
+}
+
+div.bottoni_approvazione {
+    position: relative;
+    float: right;
+    right: 20px;
+    bottom: 40px;
+    /*border: 1px solid red;*/
+}
+
+div.bottoni_approvazione a.approva, div.bottoni_approvazione a.approva_pp, div.bottoni_approvazione a.approva_bb{
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+    float: left;
+    margin-right: 15px;
+}
+
+div.bottoni_approvazione a.modifica, div.bottoni_approvazione a.modifica_pp, div.bottoni_approvazione a.modifica_bb {
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+    float: right;
+}
+
+
+div.label_approvazione {
+    position: absolute;
+    float: right;
+    right: 0px;
+    top: 0px;
+    padding: 5px;
+}
+
+span.dal {
+    display: inline-block;
+    color: darkred;
+    font-weight: bold;
+    float: right;
+    width: 250px;
+    clear: left;
+    margin-right: 90px;
+    /*margin-top: -7px;*/
+}
+
+
+/* cancellazione offerte archiviate  da listing*/
+a.del_offer {
+    color: #cc2424;
+    font-weight: bold;
+    float: right;
+    clear: both;
+}
+
+a.del_offer:hover {
+color: #a91e1e;
+}
+
+a.del_offer .entypo-trash {
+    font-size: 21px;
+}
+
+
+/* POI */
+
+ul.poi {
+    list-style: none;
+}
+
+ul.poi li {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+ul.poi .label {
+    font-size: 100%;
+}
+
+.label-info {
+    background-color: #21a9e1;
+    margin: 2px;
+    display: inline-block;
+}
+
+
+li.localita_poi {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* label eco_sostenibile*/
+
+.eco_sostenibile {
+    color: green;
+    font-variant: small-caps;
+    font-size: small;
+}
+
+/* label alert */
+.label-alert {
+    color: red;
+    font-variant: small-caps;
+    font-size: small;   
+}
+
+tr.nascondi_in_scheda th {
+    background-color: red !important;
+    color: #fff !important;
+}
+
+
+/*INFO AGGIUNTIVE PISCINA*/
+
+input[type='text'].misure {
+    width: 6em;
+}
+
+
+input[type='text'].in_linea {
+    display: inline-block;
+}
+
+
+
+/* riga suggerimento */
+.row.suggerimento .form-group{
+    margin-top: 30px;
+}
+
+
+label.apertura-piscina  {
+    text-align: center!important;
+}
+
+
+label.caratteristica  {
+    text-align: left!important;
+}
+
+
+/*input[type=checkbox]#espo_sole_tutto_giorno, input[type=checkbox]#aperto_annuale {
+    margin-top: 8px;
+}*/
+
+
+.form-control.mesi_select {
+    /*width: initial!important;*/
+    display: inline!important;
+    width: 10em!important;
+}
+
+/*.form-control.misure {
+    width: initial!important;
+    display: inline!important;   
+}*/
+
+
+/* 
+menu 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.dd3-content {
+    display: flex!important; 
+    flex-flow: row wrap!important;
+    justify-content: space-between!important;
+}
+
+ .dd3-content-items {
+    /*margin: auto;*/
+ }
+
+
+
+ ul#rapporto_mail {
+    list-style-type: none!important;
+    border: 1px solid #ebebeb;
+    margin: 0;
+    padding: 0;
+ }
+
+ ul#rapporto_mail li {
+    padding: 5px 0;
+ }
+
+ul#rapporto_mail li:nth-child(odd) { background: #f5f5f6!important; }
+
+
+
+a#hotel_rapporto_mail {
+    color: #1fb0e1!important;
+    text-decoration: underline!important;
+}
+
+a#hotel_rapporto_mail:hover{
+    text-decoration: none!important;
+}
+
+
+
+/* bottone calcola stats IA*/
+
+a#calcola {
+    margin-left:30px;
+    margin-top: 3px;
+}
+
+a#calcola:hover {
+
+    cursor: hand;
+}
+
+
+.vetrina_associata {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+
+
+
+/* home page scelta hotel del gruppo */
+
+
+
+.hotel_gruppo h2 {
+    color: #1a5c87;
+    float: left;
+    font-size: 22px;
+    letter-spacing: -1px;
+    max-width: 440px;
+    margin-bottom: 15px;
+}
+
+.hotel_gruppo span.rating {
+    color: #ffb82c;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+
+/* popup scelta hotel del gruppo */
+
+
+.item_to_connect {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;  
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.item_to_connect .bottone_entra {
+    margin-left: auto; 
+    margin-right: 100px;
+}
+
+.item_to_connect span.nominativo {
+    color: #1a5c87;
+    float: left;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.item_to_connect span.rating {
+    color: #ffb82c;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+
+
+.item_connected {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;  
+    justify-content: space-evenly;;
+    color: #045702;
+    background-color: #bdedbc;
+    border: 1px solid #b4e8a8;;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.item_connected span.nominativo {
+    color: #045702;
+    float: left;
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin-bottom: 1px;
+}
+
+.item_connected .connected {
+    color: #fff;
+    background-color: green;
+    float: right;
+    height: 100%;
+}
+
+.item_connected span.rating {
+    color: #ffb82c;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+
+
+
+.localita {
+    background: url(/images/marker.png) no-repeat;
+    color: #1fb0e1;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+.wrapper_localita {
+    float: right;
+    margin-top:20px;
+}
+
+
+.fotoStruttura {
+    float: left;
+}
+
+.icon {
+    float: right;
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 60px;
+    color: #4CAF50
+}
+
+.icon.ok {
+    color: #21a9e1;
+}
+
+
+.tile-stats .num {
+    font-size: 30px!important;
+}
+
+ul.newsletter_list {
+    list-style: none;
+}
+
+
+
+
+/* hover affect */
+
+.container {
+    position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container .image {
+  opacity: 0.3;
+}
+
+.container .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #21a9e1;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text-entra {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;   
+}
+
+
+
+/*
+COLORI MAPPA RICERCA POI
+ */
+
+.icheck-skins a[data-color-class="black"] {
+   background-color: #000;
+ }
+ .icheck-skins a[data-color-class="red"] {
+   background-color: #d54e21;
+ }
+ .icheck-skins a[data-color-class="green"] {
+   background-color: #1b7e5a;
+ }
+ .icheck-skins a[data-color-class="blue"] {
+   background-color: #21a9e1;
+ }
+ .icheck-skins a[data-color-class="aero"] {
+   background-color: #9cc2cb;
+ }
+ .icheck-skins a[data-color-class="grey"] {
+   background-color: #333;
+ }
+ .icheck-skins a[data-color-class="orange"] {
+   background-color: #f70;
+ }
+ .icheck-skins a[data-color-class="yellow"] {
+   background-color: #fc3;
+ }
+ .icheck-skins a[data-color-class="purple"] {
+   background-color: #6a5a8c;
+ }
+
+
+/* Parole chiave */
+
+
+img#mappa_listing_img:hover {
+    cursor: help;
+}
+
+table#parolechiave tr.bg-success:hover td,
+table#parolechiave tr.bg-info:hover td,
+table#parolechiave tr.bg-danger:hover td {
+    background-color: initial!important;
+}
+
+
+
+
+
+/* Servizi readonly */
+.form-group.readonly .checkbox label {
+    cursor: initial!important;
+}
+
+div.alert.alert-success a,
+div.alert.alert-success a:hover,
+div.alert.alert-success a:focus,
+div.alert.alert-success a:visited {
+    color: #045702!important;
+    text-decoration: underline;
+}
+
+
+
+textarea.form-control {
+    height: auto!important;
+    min-height: 250px!important;
+}
+
+
+
+/* bandierine del muiltilingua nella scheda hotel */
+#save_form_hotel .nav > li > a {
+    padding: 3px 15px!important;
+}
+
+
+div.pagamenti_accettati .form-group {
+    margin-bottom: 50px!important;
+}
+
+
+
+
+/* offerte bg */ 
+
+td.no-hover button:hover {
+    cursor: auto;
+}
+
+
+
+.evidence span.option {
+    font-weight: bold;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.evidence span.short_label {
+    display: block;
+    font-weight: bold;
+    color: #0ab21b;
+    background-color: #fff;
+    padding: 0 3px 0 3px;
+    width: fit-content;
+}
+
+
+tr.green {
+    background: #DCEDC8;
+}
+
+tr.orange {
+    background: #FFE0B2;
+}
+
+tr.red {
+    background: #ffcdd2;
+}
+
+div#template_wa div.modal-content {
+   max-height: 600px;
+    overflow:auto;
+}
+
+div.label {
+    padding: 0px;
+    margin: 3px;
+    display: inline-block;
+}
+
+
+
+/* Whastapp */
+
+
+div.wrapper_content_whatsapp *{
+    font-size:14px;
+}
+
+.btn-green.btn-icon.icon-left i {
+    font-size: 16px!important;
+}
+
+
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+
+.add_template {
+    width: 49px;
+    height: 49px;
+    border-radius: 100px;
+    position: static;
+}
+
+.add_template i{
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+}
+
+a.del_template {
+    color: #cc2424;
+    font-weight: bold;
+    float: right;
+    clear: both;
+}
+
+a.mod_template {
+    font-weight: bold;
+    float: right;
+    clear: both;
+}
+
+/* menu sx */
+
+.page-container .sidebar-menu #main-menu li.blocco_whatsapp {
+    border-bottom: 1px solid #eee
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_whatsapp a {
+    font-weight: bold;
+    color: #eee;
+    background-color: #007d3d;
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_whatsapp.opened a {
+    color: #fff;
+    background-color:#26b33d;
+
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_whatsapp a:hover {
+    color: #fff;
+    background-color:#26b33d;
+}
+
+
+
+
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_covid {
+    border-bottom: 1px solid #eee
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_covid a {
+    font-weight: bold;
+    color: #eee;
+    background-color: #1565C0;
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_covid a:hover {
+    color: #fff;
+    background-color:#2a61a0;
+}
+
+
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_inout {
+    border-bottom: 1px solid #eee
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_inout a {
+    font-weight: bold;
+    color: #292828;
+    background-color: #ced100;
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_inout a:hover {
+    color: #0f0d0d;
+    background-color:#ced100;
+}
+
+
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_green {
+    border-bottom: 1px solid #eee
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_green a {
+    font-weight: bold;
+    color: #eee;
+    background-color: #8CC152;
+}
+
+.page-container .sidebar-menu #main-menu li.blocco_servizi_green a:hover {
+    color: #fff;
+    background-color:#8CC152;
+}
+
+
+
+
+
+
+/* pagina servizi covid */
+
+p.nome_gruppo {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #000;
+    border: 1px solid #666;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* pagina servizi InOut */
+
+.orario_select {
+    margin:0 10px; 
+    width:60px; 
+    height: 27px; 
+    padding: 6px 6px; 
+    font-size: 12px; 
+    line-height: 1.42857143; 
+    color: #555555; 
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+
+
+
+
+/* POI ICONE */
+
+.icon_poi {
+    font-family: 'Fontello';
+    padding: 5px;
+    min-height: 30px;
+    background-color: #eee;
+    font-size: 15px;
+}
+
+.icon_poi option {
+    font-size: 15px;
+}
+
+
+
+/* FINE Amministrazione */
+
+
+	/* ------------------------------------ */
+	/* Modifiche INFOALBERGHI				*/
+	/* ------------------------------------ */
+	
+	.wating {     padding: 4px;color:#990000; display: inline-block; font-weight: bold;}
+
+
+
+

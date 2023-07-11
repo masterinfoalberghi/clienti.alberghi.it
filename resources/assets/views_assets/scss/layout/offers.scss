@@ -1,0 +1,37 @@
+  
+  /**
+   * LAYOUT Offers
+   */	
+   
+	@import "../include/config";
+	
+	.offer_spot { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		overflow: hidden; 
+		color: #fff;
+		height:225px;
+		position: relative; 
+			
+	}
+	
+	.offer_content .page-edit a { color: $chiaro; text-decoration: underline; }
+	
+	.offer_title { padding-bottom: calc($pad / 4); text-shadow: $text-shadow; }
+	.offer_subtitle { color: $grigio-medio; display: block; text-shadow: $text-shadow;  }
+	.offer_subtitle p { color: $grigio-medio}
+	.offer_spot h3 {
+		
+		color: #fff; font-size: 24px; text-shadow: $text-shadow;
+		
+	}
+
+	.offer_image { height:225px; background-position: center center; }
+	.offer_content { height:225px; }
+	a.offer_button { text-transform:uppercase; color:#fff; position:absolute; bottom:calc($pad / 2); right:calc($pad / 2);  }
+	
+	
+	
+	
+	
+	

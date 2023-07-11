@@ -1,0 +1,294 @@
+	/**
+	 * Linsting/Localita
+	 */
+
+	@import 'include/config';
+	@import "layout/briciole";
+	@import "layout/rating";
+	/*@import "layout/covid";*/
+
+	@import "layout/sidebar";
+	@import "layout/filters";
+	@import "layout/item-listing";
+	@import "layout/barusso";
+	@import "layout/pagination";
+	@import "layout/loading";
+    @import "404";
+    
+	/**
+	 * Eccezioni 
+	 */
+
+	h1 {
+		padding-bottom: 0;
+	}
+
+	.listing-ajax {
+		position: relative;
+		padding-bottom: $pad;
+	}
+
+    .item-listing-footer { 
+        margin: 5px 0; 
+    }
+    
+	.item-listing-footer a.tooltip,
+	.item-listing-footer a.tooltip:hover {
+		color: #444 !important;
+	}
+
+    .item-listing-distance i {  color: $header; }
+    .item-listing-distance i.icon-map-o {  font-size:12px; }
+
+	.item-listing-distance .distance { 
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	.item-listing-address {
+		font-size: 13px;
+		display: block;
+        color:#666; 
+	}
+
+	.item-listing-pdf {
+		text-transform: lowercase;
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.item-listing-pdf>span {
+		font-weight: 400;
+		color: #444 !important
+	}
+
+	/** 
+	Elementi tabella 
+	 */
+
+	table.content {
+		font-size: 13px;
+	}
+
+	table.content td {
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	table.content th,
+	table.content thead td {
+		font-weight: bold;
+		line-height: 20px;
+	}
+
+	/**
+	Elementi tabel listing
+	 */
+
+	.row-table td {
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	.main-content-text.top {
+		padding:30px 0 0;
+    }
+	
+	.listing-content .main-content-text.top p {
+		font-size: 13px !important;
+		line-height: 20px;
+		font-weight: 400;
+	}
+
+    // #filter_container {
+    //     position: fixed;
+    //     top:0;
+    //     left:0;
+    //     right:0;
+    //     bottom:0;
+    //     background: rgba(0,0,0,0.3);
+    //     z-index: 1000;
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+
+	/**
+     * Media query
+     */
+
+	@media (max-width: 1200px) {
+
+		.filters-container>.col-xs-9,
+		.content-list-item {
+			float: right;
+		}
+
+		.desktop .filters-container>.col-xs-9,
+		.desktop .content-list-item {
+			width: 74%
+		}
+
+		nav ul#menu-macrolocalita>li a {
+			font-size: 13px;
+		}
+
+		.item-listing-figure {
+			width: 180px;
+		}
+
+		.item-listing-figure img {
+			margin-left: -20px;
+		}
+
+		.item-listing-content {
+			width: 590px;
+			padding: 10px 0 0 190px
+		}
+
+		.item-listing-title h2 {
+			font-size: 18px;
+			max-width: 70%;
+		}
+
+		.row-info-table th {
+			width: 130px;
+		}
+
+		.row-table-item {
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		#barusso .badge {
+			display: none;
+		}
+
+		.item-listing-content {
+			width: 560px;
+		}
+	}
+
+	.caparre {
+		margin-top: 20px;
+		max-width: 470px;
+	}
+
+	span > .caparre {
+		margin-top: 0px!important;
+	}
+
+	.politiche_canc {
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: -10px;
+		font-size: 13px;
+	}
+
+	.caparra {
+		font-size: 13px;
+		position: relative;
+	}
+
+	.caparra p {
+		padding-left: 0px;
+		line-height: 17px;
+		margin-bottom: 5px;
+		padding-bottom: 0;
+	}
+
+	.caparra p span.perido_caparra {
+		font-weight: bold;
+	}
+
+	.caparra .option_13,
+	.caparra .option_11,
+	.caparra .option_10,
+	.caparra .option_12,
+	.caparra .option_8,
+	.caparra .option_9,
+	.caparra .option_6,
+	.caparra .option_5,
+	.caparra .option_4,
+	.caparra .option_3,
+	.caparra .option_7,
+	.caparra .option_2,
+	.caparra .option_1 {
+		color: #0ab21b;
+		line-height: 22px;
+		font-weight: 400;
+	}
+
+
+	.politiche_cancellazione {
+		margin: 0px 10px 0px 0;
+		border-radius:3px; 
+		padding:5px 0 0; 
+		font-size: 14px;
+		text-align:left;
+		color: #0ab21b;
+
+	}
+    
+    .politiche_cancellazione b {
+        border-bottom: 4px solid #DCEDC8;
+    }
+
+	.politiche_cancellazione span {
+		color: #0ab21b;
+		line-height: 22px;
+		position: static;
+
+	}
+
+    .politiche_cancellazione span i {
+        font-size: 10px; 
+    }
+
+	.politiche_cancellazione {
+        
+        text-transform: lowercase;
+	}
+
+    .politiche_cancellazione:first-letter {
+        text-transform: uppercase;
+    }
+
+	.item-listing-figure.item-listing-figure-closed {
+		background: #fff;
+	}
+
+	.item-listing-figure.item-listing-figure-closed img {
+		opacity: 0.5;
+	}
+
+	.item-listing-figure .chiusoTemp {
+		background: #f44336;
+		color: #fff;
+		text-transform: uppercase;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-size: 12px;
+		left: 5px;
+		right: 5px;
+		padding:  3px 5px;
+		bottom: 5px;
+		position: absolute;
+		text-align: center;
+		z-index: 400;
+    }
+    
+
+    .main-content-text-1-col ul,
+    .main-content-text-1-col li {
+        display:inline;
+        margin:0; 
+        padding:0; 
+    }
+    .main-content-text-1-col li { margin-right:15px; }

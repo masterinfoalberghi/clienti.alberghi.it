@@ -1,0 +1,36 @@
+
+/**
+ * Viene letto da tinymce4 per applicare lo stile interno all'area di editing di tinymce
+ * serve a dare lo stesso al contenuto dell'editor lo stesso look&feel del sito
+ *
+ * table-layout: fixed;
+ * serve a fare in modo che le tutte le celle mantengano sempre la stessa larghezza, dinamicamente,
+ * senza dover specificare la larghezza su ogni cella.
+ * In questo modo prevengo un comportamento a mio avviso spiazzante di tinymce
+ */
+
+table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+td{
+  table-layout: fixed;
+  font-size:14px;
+  padding: 7px;
+}
+
+thead{
+  background: #ff8000;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background: #ececec;
+}
+
+tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.mceu_88 { display: none !important;  }

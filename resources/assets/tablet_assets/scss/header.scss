@@ -1,0 +1,260 @@
+  /**
+   * Header ( TABLET )
+   */
+  
+  @import "../../views_assets/scss/include/config";
+  #page {
+      padding-top: 60px !important
+  }
+  
+  .menubutton {
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+  }
+  
+  .menubutton i {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 100;
+      position: absolute;
+      top: 7px;
+      left: 3px;
+  }
+  
+  // Menu
+  #menu-principale {
+      position: fixed;
+      top: 59px;
+      right: 0px;
+      bottom: 0;
+      width: 308px;
+      padding: calc($pad / 2);
+      background: $grigio;
+      z-index: 1;
+      overflow-x: hidden;
+      height: auto;
+  }
+  
+  #menu-principale .container,
+  #menu-principale .row {
+      width: auto;
+      margin: 0;
+      padding: 0;
+  }
+  
+  ul.menu-macrolocalita li {
+      display: block;
+      width: 100%;
+      position: relative;
+      padding: 0;
+      margin-bottom: 3px;
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+      border: none !important;
+  }
+  
+  ul.menu-macrolocalita li i {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 24px;
+      text-align: center;
+      background: $hightlight3;
+      color: $grigio-scuro;
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+      display: block;
+      z-index: 100;
+  }
+  
+  ul.menu-macrolocalita li a {
+      display: block;
+      padding: 5px 10px;
+      background: $hightlight3;
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+  }
+  
+  ul.menu-macrolocalita li.open {
+      background: $hightlight3;
+  }
+  
+  ul.menu-macrolocalita li.current,
+  ul.menu-macrolocalita li.current .open {
+      background: none;
+  }
+  
+  ul.menu-macrolocalita>li.current i {
+      top: 5px;
+      background: $hightlight3;
+  }
+  
+  ul.menu-macrolocalita>li.current>a {
+      background: $cyano;
+  }
+  
+  ul.menu-macrolocalita>li ul {
+      margin: 3px 0 calc($pad / 2);
+      padding: 2px 0;
+  }
+  
+  ul.menu-macrolocalita>li.current ul {
+      display: block;
+  }
+  
+  ul.menu-macrolocalita>li li {
+      width: 267px;
+      margin-left: 10px;
+  }
+  
+  #content-link {
+      display: none;
+  }
+  
+  #content-link ul.menu-macrolocalita>li li {
+      width: 277px;
+      margin-left: 0px;
+  }
+  
+  // Cambio menu button
+  .menuopen2 .menubutton,
+  .menuopen .menubutton {
+      background: $rosso
+  }
+  
+  .menubutton img {
+      margin: -5px 0 0 -5px;
+  }
+  
+  // Pagina con menu aperto
+  .menuopen {
+      background: $grigio-scuro;
+  }
+  
+  .menuopen #page {
+      position: fixed;
+      left: -308px;
+  }
+  
+  .menuopen2 #page {
+      position: fixed;
+      left: -488px;
+  }
+  
+  .menuopen2 #menu-principale,
+  .portrait.class-page-scheda #sidebar {
+      display: none;
+  }
+  
+  .menuopen #menu-principale,
+  .portrait.menuopen2 #sidebar {
+      display: block;
+  }
+  
+  #page {
+      position: relative;
+      left: 0;
+      padding-top: 50px;
+      z-index: 10;
+  }
+  
+  // Bottone menu
+  .menubutton {
+      position: absolute;
+      top: 9px;
+      right: 0px;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, .1);
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+  }
+  
+  #linkheader {
+      position: absolute;
+      top: 0px;
+      right: 60px;
+  }
+  
+  .class-page-home #linkheader {
+      right: calc($pad / 4);
+  }
+  
+  #logo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+  
+  .logo {
+      padding: calc($pad / 2) 0 calc($pad / 3);
+  }
+  
+  #txtCerca {
+      margin: 13px 0 0;
+  }
+  
+  .up-link button {
+      top: 17px;
+  }
+  
+  @media (max-width: 768px) {
+      #content-link {
+          display: block;
+      }
+      #content-link ul.menu-macrolocalita>li li {
+          width: 277px;
+          margin-left: 0px;
+      }
+  }
+  
+  #covid {
+      background-color: #FF9326;
+      border: 0px solid #f24a46;
+      margin-top: -1px;
+  }
+  
+  #covid #alert-description {
+      font-size: 13px;
+      padding: 4px 9px 4px 9px;
+      color: #fff;
+      text-align: center;
+  }
+  
+  #covid #alert-description span#alert {
+      padding: 1px 11px;
+      background-color: #f24a46;
+      color: #fff;
+      margin-right: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+  }
+
+  #covid #alert-description span#bonus {
+      padding: 1px 11px;
+      background-color: #4CAF50;
+      color: #fff;
+      margin-right: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+  }
+  
+  #covid #alert-description a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 500;
+  }
+  
+  #covid #alert-description a:hover {
+      color: #1A5C87;
+      text-decoration: none;
+  }

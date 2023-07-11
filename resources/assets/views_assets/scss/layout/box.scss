@@ -1,0 +1,74 @@
+  
+  /**
+   * LAYOUT Box
+   */
+			
+	.box_header { position: relative; z-index: 3; height:225px; background: rgba(0,0,0,0.3); margin: calc($pad / -2); padding:calc($pad / 2) }
+	
+	
+	.box_header h3 {color: $chiaro !important; }
+
+	
+	.box_title { display:block;  font-size: 24px; text-transform: uppercase; padding-bottom: 0; text-shadow: $text-shadow;}
+	.box_subtitle {color: $chiaro; display: block; text-shadow: $text-shadow; font-size: $font-size; font-weight: normal;}
+
+
+
+	.pellicola .box_header .box_title {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	
+	// .pellicola .box_header .box_subtitle {
+	// 	position: relative;
+	// 	top: 70px;
+	// }
+	
+	.box_header h3.box_title span {
+		font-size:12px;
+		font-weight: bold;
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	.box_subtitle ul {
+		list-style-type: none;
+		padding-left:0;
+	}
+
+	.box_subtitle ul li{
+		padding: 1px 0;
+	}
+	
+	.box_subtitle ul li:first-child{
+		padding: 1px 0;
+		padding-top: 10px;
+	}
+
+
+	.box_background { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		
+		height:225px; 
+		position: relative; 
+		overflow: hidden; 
+		background-position: center center;
+		
+	}
+	
+	.box_content { 
+		
+		position: absolute; 
+		bottom: calc($pad / 2); 
+		right:calc($pad / 2); 
+		color: #fff; 
+		text-align: right; 
+		z-index: 3;
+		
+	}
+	
+	.box_content .label { color: $grigio-chiaro; display: block; font-size: $font-size; }
+	.box_content .price { color: $chiaro;  font-size: 30px; font-weight: normal; text-shadow: $text-shadow;}
+	

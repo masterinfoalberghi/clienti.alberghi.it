@@ -1,0 +1,274 @@
+	h3 {
+		color: rgba(255, 255, 255, .7);
+		padding: 0;
+		margin: 15px 0 10px;
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	/* -- Pannello bambini -- */
+
+	.etabambini,
+	#etabambini {
+		margin: 0px 5px 15px;
+		background: #fff;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		display: block;
+	}
+
+	.chiusura-bimbi {
+		background: #fff;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		display: block;
+	}
+
+	.privacy_checkbox {
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.n_eta_bambini {
+		padding: 10x 10px 0;
+		margin: 0 0 5px;
+		display: block;
+	}
+
+	.width_bambini_eta_form,
+	.bambini_eta_form {
+		width: 24%;
+		display: inline-block;
+		padding: 3px;
+		border-right: 1px solid #FF9326;
+		margin: 0 0 5px;
+	}
+
+	.width_bambini_eta_form:nth-child(4),
+	.bambini_eta_form:nth-child(4) {
+		border: none;
+	}
+
+	.width_bambini_eta_form select,
+	.bambini_eta_form .eta_select {
+		padding: 7px 10px;
+	}
+
+	/*.date_night {
+		position: relative;
+		top: 7px;
+		font-size: 16px;
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+*/
+	.data_picker a {
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.date_flessibili span {
+		position: relative;
+		top: 7px;
+		font-size: 16px;
+	}
+
+	.date-checkbox {
+		/*     	text-align: center;	 */
+		margin-bottom: 10px;
+		margin-left: 3px;
+	}
+
+	.date-checkbox label {
+		margin: 0;
+		padding: 0;
+		background: 0 0;
+		border: none;
+		text-transform: none;
+		font-size: 14px;
+	}
+
+	.date-checkbox label small {
+		display: inline-block;
+		margin-left: 5px;
+		max-width: 100px;
+	}
+
+	/* camere aggiuntive*/
+	.hidden_camera {
+		display: none;
+	}
+
+	.added {
+		display: block;
+	}
+
+
+	/*.camera_label {
+		color: #fff;
+		background: #882617;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		padding: 2px 4px;
+		margin: 0 0 10px;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-align: left;
+		display: inline-block;
+		white-space: nowrap;
+	}*/
+
+	.camera_label b {
+		color:#fff; font-weight: bold;
+	}
+
+	#rooms-list {
+		margin: 0 -17px;
+
+	}
+
+	/*.room { margin:0 -10px 8px; padding:15px 20px 0px; background: rgba(255,255,255,0.2); border: 1px solid #f9c189;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+		-moz-box-shadow:	0px 1px 3px rgba(0,0,0,0.25);
+		box-shadow: 		0px 1px 3px rgba(0,0,0,0.25);
+	}*/
+
+	.room {
+		margin: 0 0px 0px;
+		padding: 8px 17px 4px;
+		border-bottom: 1px dashed #fff;
+	}
+
+	button.light {
+
+		background: none !important;
+		border: none;
+		/*background: #639a48;*/
+		color: #fff;
+		font-size: 13px;
+		width: auto;
+		padding: 10px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	button.light:hover {
+		background: #75c927;
+	}
+
+	button#delCamera.light {
+		background: #f45f55;
+
+	}
+
+	button#delCamera.light:hover {
+		background: #ff0500;
+	}
+
+
+	.width_bambini_eta_form,
+	.bambini_eta_form {
+		padding: 0
+	}
+
+	/* -- Freccia -- */
+
+	.active-force select {
+		padding-bottom: 10px;
+	}
+
+	.note {
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		padding: 8px;
+		margin-top: 15px;
+		background: #fff;
+		border: 1px solid #f54949;
+		position: relative;
+		color: #222;
+		text-align: left !important;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center !important;
+	}
+
+	.note i {
+
+		position: absolute;
+		top: 8px !important;
+		left: -37px !important;
+		font-size: 25px;
+		color: #fff !important;
+
+	}
+
+	.note h4 {
+		color: #222 !important;
+		margin-top: 6px !important;
+		margin-bottom: 0;
+		padding: 0 !important;
+		font-size: 14px !important;
+	}
+
+	/* Whatsapp */
+
+	.tpd-skin-purple .tpd-title {
+		color: #fff;
+		font-size: 14px !important;
+
+	}
+
+	.tpd-skin-purple .tpd-content,
+	.tpd-skin-purple .tpd-close {
+		color: #455A64;
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+
+	.tpd-skin-purple .tpd-background-content {
+		background-color: #fff;
+	}
+
+	.tpd-skin-purple .tpd-background {
+		border-width: 3px;
+		border-color: #57D365;
+	}
+
+	.tpd-skin-purple .tpd-background-title {
+		background-color: #57D365;
+	}
+
+	.tpd-skin-purple .tpd-title-wrapper {
+		border-bottom: none;
+	}
+
+	.tpd-skin-purple .tpd-background-shadow {
+		box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+	}
+
+	.tpd-skin-purple .tpd-spinner-spin {
+		border-color: rgba(255, 255, 255, .2);
+		border-left-color: #fff;
+	}
+
+	.tpd-skin-purple a {
+		color: #ddd;
+	}
+
+	.tpd-skin-purple a:hover {
+		color: #c6c6c6;
+	}

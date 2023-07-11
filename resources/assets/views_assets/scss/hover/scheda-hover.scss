@@ -1,0 +1,9 @@
+	
+	/**
+	 * HOVER Scheda
+	 */
+
+	@import '../include/config';
+	// .menu-secondario-item:hover { padding:calc($pad / 6); background: $blu; }
+	// .menu-secondario-item:hover a { color: $chiaro !important; }
+	a.more-photo:hover { background: $grigio-scuro; color: $chiaro;}

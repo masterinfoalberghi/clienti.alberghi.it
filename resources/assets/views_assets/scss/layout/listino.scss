@@ -1,0 +1,49 @@
+  
+  /**
+   * LAYOUT Listino
+   */
+			
+	#listino table.content td.empty { background: #fff url("//static.info-alberghi.com/images/pellicola2.jpg"); }
+	#listino table.content td:nth-child(1) { background: $grigio-chiaro-odd; }
+	
+	#listino table.content th.title-header { background: #fff; border:none; text-align: left; padding: calc($pad / 6) 0;   }
+	#listino table.content th.title-header h4 { padding: calc($pad / 2) 0 0; font-size: 16px; font-weight: bold;}
+	#listino table.content div { display: table-row !important;} 
+
+	/**
+	 * Badge
+	 */
+	 
+	.badge.reverse.offerta { background: $rosso; }
+	.badge.reverse.bambinigratis { background: $cyano; }
+	
+	#listino table.content td .badge { 
+
+		-webkit-box-shadow: $shadow; -moz-box-shadow: $shadow; box-shadow: $shadow;;
+		 -webkit-border-radius: 50%;-moz-border-radius:  50%;border-radius:  50%; 
+		color: $rosso; position: absolute; right:2px;  top: 2px;  line-height: 1em; padding:3px 6px; background: #ffffff; border:1px solid rgba(0,0,0,0.1);   
+
+	}
+
+
+	#nolistino {
+
+		-webkit-border-radius: $raggio;
+		-moz-border-radius: $raggio;
+		border-radius: $raggio;  
+		padding: $pad; 
+		background-color: $arancio-chiaro;
+		line-height: 1.7em;
+		text-align: left;
+		font-size: 18px;
+		// text-transform: uppercase;
+
+	}
+
+	#nolistino b {
+		font-size: 22px; 
+	}
+
+
+
+	

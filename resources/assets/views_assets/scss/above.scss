@@ -1,0 +1,74 @@
+	/**
+	 * Css Comune ( above)
+	 */
+	
+	@import 'include/config';
+	@import 'include/animations';
+	@import 'include/above-bootstrap';
+	@import 'include/link';
+	@import 'include/form';
+	@import 'layout/generale';
+	@import 'layout/header';
+	@import 'layout/cookielaw';
+	@import 'layout/spot_footer';
+	@import 'layout/footer';
+
+	body { 
+		margin: 0;
+		overflow-x: visible;
+		min-width: 1024px;
+	}
+	
+	body.tablet {
+		min-width: 768px;
+	}
+	
+	#page {
+		background: #ffffff;
+	}
+	
+	#covid {
+		background-color: #FF9326;
+		border: 0px solid #f24a46;
+		margin-top: -1px;
+	}
+	
+	#covid #alert-description {
+		font-size: 13px;
+		padding: 4px 9px 4px 9px;
+		color: #fff;
+		text-align: center;
+	}
+	
+	#covid #alert-description span#alert {
+		padding: 1px 11px;
+		background-color: #f24a46;
+		color: #fff;
+		margin-right: 10px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	#covid #alert-description span#bonus {
+		padding: 1px 11px;
+		background-color: #4CAF50;
+		color: #fff;
+		margin-right: 10px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	#covid #alert-description a {
+		color: #fff;
+		text-decoration: underline;
+		font-weight: 400;
+	}
+	
+	#covid #alert-description a:hover {
+		color: #1A5C87;
+		text-decoration: none;
+	}
+
+	

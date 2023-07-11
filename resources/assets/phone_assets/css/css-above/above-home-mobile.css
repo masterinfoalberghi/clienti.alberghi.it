@@ -1,0 +1,257 @@
+/* Box home */
+#lochome {
+	margin: 0 -14px
+}
+
+#lochome .localita {
+	width: calc(50% - 2px) !important;
+	height: 150px;
+	text-align: center;
+	display: table;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+	margin:1px;
+}
+
+#lochome .localita.right {
+	float: right !important;
+}
+
+#lochome .localita a {
+	font-size: 14px;
+	color: #ddd;
+	text-transform: uppercase;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+}
+
+#lochome h1 {
+	font-size: 16px;
+	margin: 0;
+	color: #fff;
+}
+
+#lochome .localita:before {
+
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0.6;
+
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+
+.rimini:before {
+	background: #fff url(//static.info-alberghi.com/images/home/rimini.jpg) no-repeat bottom center;
+}
+
+.riccione:before {
+	background: #fff url(//static.info-alberghi.com/images/home/riccione.jpg) no-repeat top center;
+}
+
+.cesenatico:before {
+	background: #fff url(//static.info-alberghi.com/images/home/cesenatico.jpg) no-repeat center center;
+}
+
+.cattolica:before {
+	background: #fff url(//static.info-alberghi.com/images/home/cattolica.jpg) no-repeat center center;
+}
+
+.milano-marittima:before {
+	background: #fff url(//static.info-alberghi.com/images/home/milano-marittima.jpg) no-repeat center center;
+}
+
+.bellaria:before {
+	background: #fff url(//static.info-alberghi.com/images/home/bellaria.jpg) no-repeat center center;
+}
+
+.cervia:before {
+	background: #fff url(//static.info-alberghi.com/images/home/cervia.jpg) no-repeat center center;
+}
+
+.misano-adriatico:before {
+	background: #fff url(//static.info-alberghi.com/images/home/misano.jpg) no-repeat center center;
+}
+
+.gabicce:before {
+	background: #fff url(//static.info-alberghi.com/images/home/gabicce.jpg) no-repeat center center;
+}
+
+.lidi-ravennati:before {
+	background: #fff url(//static.info-alberghi.com/images/home/lidi-ravennati.jpg) no-repeat bottom center;
+}
+
+.igea-marina:before {
+	background: #fff url(//static.info-alberghi.com/images/home/igea.jpg) no-repeat center center;
+}
+
+.pesaro:before {
+	background: #fff url(//static.info-alberghi.com/images/home/pesaro.jpg) no-repeat center center;
+}
+
+.riviera-romagnola:before {
+	background: #fff url(//static.info-alberghi.com/images/home/riviera-romagnola.jpg) no-repeat center center;
+}
+
+/* Mega spot */ 
+
+#megaspot { height: 200px; overflow: hidden; margin:1px 0 0 } 
+
+#boxspot {
+	position: relative;
+    margin: 0 1px;
+    height:180px;
+    overflow: hidden;
+}
+
+#boxspot article {
+	position: relative; 
+}
+
+#boxspot article:last-child {
+	margin-bottom: 5px;
+}
+
+#boxspot figure {
+	background: #000;
+    height: fit-content;
+    width: 371px;
+    height:180px; 
+    overflow: hidden;
+}
+
+#boxspot img {
+    width: auto;
+    height:180px; 
+	opacity: 0.7;
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+#boxspot .boxspot_date {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: #fff;
+	font-size: 12px;
+}
+
+#boxspot .boxspot_date time {
+	background: rgba(255, 255, 255, 0.7);
+	padding: 2px 5px;
+	color: #222;
+	font-size: 12px;
+}
+
+#boxspot .boxspot_title {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	font-size: 16px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#boxspot .button_spot {
+	font-weight: bold;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 12px;
+	color: #f0f0f0;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+}
+
+#boxspot .slick-slide {
+	background: #000;
+	overflow: hidden;
+}
+
+#boxspot .slick-dots {
+	position: absolute;
+	bottom: 7px;
+	left: 10px;
+}
+
+#boxspot .slick-dots button {
+	background: rgba(255, 255, 255, 0.5);
+	border: 2px solid #fff;
+	width: 10px;
+	height: 12px;
+	min-width: 12px;
+	padding: 0;
+	display: block;
+	color: transparent;
+	margin: 0 2px;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+}
+
+#boxspot .slick-active button {
+	background: #fff;
+}
+
+#boxspot .slick-dots,
+#boxspot .slick-dots li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+
+@media (min-width: 450px) {
+
+	#lochome .localita {
+		height:180px;
+	}
+
+
+	/*.col-xs-6 {
+		width: 33.333333%;
+	}
+
+	.col-xs-6:nth-child(1),
+	.col-xs-6:nth-child(2) {
+		width: 50%;
+	}
+
+	.col-xs-12.smartlink {
+		width: 50%;
+	}
+
+	#greenbooking.col-xs-12.smartlink {
+		width: 100%;
+	}
+
+	/* -- LANDSCAPE -- * /
+
+	.landscape .col-xs-6:nth-child(3),
+	.landscape .col-xs-6:nth-child(2) {
+		width: 50%
+	}
+
+	.landscape #lochome #rivieraromagnola.localita {
+		display: none;
+	}
+
+*/
+}

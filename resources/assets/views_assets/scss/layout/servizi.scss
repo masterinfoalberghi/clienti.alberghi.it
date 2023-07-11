@@ -1,0 +1,51 @@
+  
+  /**
+   * LAYOUT Servizi
+   */
+	 
+	.servizi-in-evidenza ul { margin-top: $pad;  -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-gap:  $pad; -moz-column-gap: $pad; column-gap: $pad;}
+	.servizi { margin-top: $pad;  -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-gap: 120px; -moz-column-gap:120px; column-gap: 120px;}
+	
+
+	.servizi span {
+		font-weight: bold;
+		display: block;
+		margin: 50px 0px 10px 0;
+	}
+
+	.servizi span.first {
+		margin-top: 0px;
+	}
+
+
+	.servizi .servizi-content {
+		
+		 clear:both;
+		 display:table; 
+		                      
+	}
+	.servizi tr {
+		-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+               padding: 0 0 $pad 0;
+	}
+	.servizi th { width: 30%;}  
+
+	.servizi th,
+	.servizi td {  text-align: left !important; vertical-align: top; text-transform: lowercase;  line-height: 18px;padding: 0 calc($pad / 3) calc($pad / 3) 0; }
+	
+	.servizi ul { padding:0;  margin:0; position: relative;  }
+	.servizi li { padding:0; padding-left: $pad;  margin:0; list-style: none; position: relative; text-transform: lowercase;}
+	.servizi li i {  position: absolute; top:0px; left:0; color: $verde; }
+		
+	.servizi th:first-letter,
+	.servizi td:first-letter { text-transform: uppercase;  }
+	
+	.servizi-in-evidenza h4 { font-size: 22px;  font-weight: normal; display: block; color: $chiaro !important; background: $verde; box-shadow:0 2px 3px rgba(0,0,0,0.2);line-height: auto; margin: (-$pad) (-$pad) calc($pad / 2); padding:calc($pad / 4) calc($pad / 4) (calc($pad / 2))-5 !important;   }
+	.servizi-in-evidenza { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;  padding: $pad; border:5px solid $verde; background: #ecf3e5; }
+	
+	.servizi-in-evidenza ul,
+	.servizi-in-evidenza li { padding:0 0 0 0; margin:0; list-style: none; position: relative;  }
+	.servizi-in-evidenza li { padding-left: $pad; }
+	.servizi-in-evidenza i { position: absolute; top:0px; left:0; color: $verde; }

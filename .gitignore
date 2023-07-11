@@ -1,0 +1,97 @@
+/public/hot
+/public/storage
+/storage/*.key
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+yarn-error.log
+_ide_helper.php
+
+
+#@Luigi add composer.json perché il mio locale è per php8
+composer.json
+
+#File maledetti da DIO
+.DS_Store
+.phpintel
+.profile
+.lock
+.sublime-workspace
+.sublime-project
+npm-debug.log
+php_error.log
+.directory
+.Thumbs
+.vscode/
+
+#Folder
+/__SSL__
+/work
+/vendor
+/node_modules
+/storage/logs
+/storage/framework/
+/public/greenbooking/img/piantumazioni/originali
+/public/images/pagine
+
+#Configurazioni
+.env
+config/cache.php
+
+# Htaccess
+public/.htaccess
+public/.htpasswd
+public/robots.txt
+
+# Sitemap
+public/images_sitemap.xml
+public/images_sitemap1.xml
+public/images_sitemap2.xml
+
+public/sitemap.xml
+public/sitemapindex.xml
+public/sitemap_immagini_cdn.xml
+public/sitemap_immagini_https_cdn.xml
+
+#Old version
+old_version
+old
+WT_OLD
+
+#Static
+/static/images/
+
+#Backup occasionali
+/static.zip
+/public.zip
+/node_modules.zip
+/.idea
+composer.lock
+/*.sh
+gulpfile.old
+package.old
+*.bz2
+*.dump
+ottimizzazione_immagini.txt
+
+#Prove
+
+public/prova_mail.html
+vendor-5.8
+composer.json.5.8
+composer.lock.5.8
+resources/assets/vendor/fontello/old2
+vendor.6.19 online
+vendor.7.24 sviluppo
+vendor.5.8
+vendor.7.19
+app/Exceptions/Handler.7.24.php
+app/Exceptions/Handler.6.19.php
+database/migrations/old_migrations
+app/Http/Controllers/vecchio-form
+*.zip
+resources/assets/views_assets/js/vecchio-form
+resources/views/widget/vecchio-form
+*.old
+* copy.php
+static

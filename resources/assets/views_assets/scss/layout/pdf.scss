@@ -1,0 +1,28 @@
+	
+	@import "include/config";
+	
+	
+	.item-listing-pdf { text-transform: lowercase;}
+	.item-listing-pdf:first-letter { text-transform: uppercase;}
+	.item-listing-pdf>span { white-space: nowrap; color: #000; }
+	.item-listing-pdf span span { 
+
+		background: $cyano; 
+		width:5px; height:5px; 
+		margin: 0 calc($pad / 6) ;
+		position: relative; top:-2px;
+		display: inline-block; 
+		 -webkit-border-radius: 50%;
+		 -moz-border-radius: 	50%;
+		 border-radius:			50%
+
+
+	 }
+	.item-listing-pdf b { color:#000; border-bottom: 4px solid $evidenziato;  }
+	
+
+	/*
+	.item-listing-pdf .tag { font-size: 13px;  white-space: nowrap; color: $grigio-scuro; text-transform: lowercase;}
+	.item-listing-pdf .tag b { background: $evidenziato;  }
+	*/
+	

@@ -1,0 +1,22 @@
+	 
+	  
+	  /**
+	   * Informazioni
+	   */ 
+	   	
+	  .row-info-table {border-collapse: collapse;}
+	   	 	  
+	  .row-info-table td,
+	  .row-info-table th { border: 1px solid $cyano-medio; text-transform: lowercase; padding: 2px 8px; }
+
+	  .row-info-table th:first-letter,
+	  .row-info-table td:first-letter { text-transform: uppercase; }
+	  
+	  .row-info-table th { width:150px; background: $cyano-chiaro; text-align: left; text-overflow: ellipsis; overflow-x: hidden; white-space: nowrap;  }	    
+	  .row-info-table tr:nth-child(odd) {background: #fff;}
+	  .row-info-table tr:nth-child(even) {background: #f5f5f5;}
+	  .row-info-table tr:nth-child(even) th { background: $cyano-medio; }
+	  
+	  .row-info-table td { background: none !important; }
+	  
+	  	

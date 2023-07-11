@@ -1,0 +1,59 @@
+	
+	h1 { font-size: 22px; font-weight: normal;}
+	h2,h3 { font-weight: 400; color: #195c8a; text-transform: uppercase; }
+	a { color: #35a6e8;}
+	a:hover { color: #6ac0d8; }
+	.rating { font-size: 14px; position:relative; top:-5px; display: inline-block; vertical-align: middle; }
+	
+	.tornahotel { margin:20px 0; display: block;}
+	
+	.listini_custom,
+	#listino,
+	#listinoMinMax,
+	#no_prezzi,
+	#noteprezzi,
+	#indice_listini,
+	#datihotel { padding:0 15px;}
+	
+	#no_prezzi,
+	#noteprezzi {  border-top:1px solid rgba(0, 0, 0, 0.1);  }
+	#noteprezzi { padding-bottom: 15px; line-height: 1.5em; }
+	
+	#indice_listini { border-bottom:1px solid rgba(0, 0, 0, 0.1) }
+	
+	/* -- listini -- */
+	
+	.listino_items { margin-bottom: 15px; }
+	.listino_items span { display: block; float:left; width:50%; }
+	.listino_periodo { background: #639a48;margin: 0 -15px ;  padding:8px 15px; color:#fff;  }
+	.listino_items span.periodo { color:#fff;  display: inline-block; width:auto;  margin-right: 10px;  }
+	.listino_items .price { text-align: right;}
+	.listino_items .price small { color:#999; }
+	.listino_items .price small.offerte { color:#fff; font-size: 11px; text-transform:uppercase; text-align: left; display: inline-block; padding:4px; background: #aaa;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px; }
+	.listino_item { padding:8px 15px; display: block; margin: 0 -15px;}
+	.listino_item:nth-child(even) { background: #fff; }
+	
+	.titolo_listino h2 { margin-bottom: 0;}	
+	
+	.note { padding-bottom: 15px }
+	.note p, 
+	.titolo_listino p { margin: 5px 0 10px; font-size: 14px; line-height: 18px; }
+	
+	/* -- indice -- */
+	
+	#indice_listini { padding-bottom: 15px; }
+	#indice_listini ul,
+	#indice_listini li { padding:0; margin:0; list-style: none; }
+	#indice_listini li a { color:#222; padding:2px 0 2px 20px; display: block; background: #fff url("//static.info-alberghi.com/images/arrow_select_reverse.png"); background-position: left center; background-repeat: no-repeat; }
+
+
+
+span.min_price, span.max_price {
+	font-size: 14px;
+  color: #666;
+  display: contents!important;
+}
+

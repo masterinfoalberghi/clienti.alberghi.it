@@ -1,0 +1,32 @@
+  
+  /**
+   * Listing/Localita ( TABLET )
+   */
+
+	@import "../../views_assets/scss/include/config";
+	
+	nav ul#menu-macrolocalita>li { float:none; }
+	
+	// Medium devices (tablets, 768px and up)
+	
+	@media (min-width: 768px) and (max-width: 991px) { 
+		
+		#content-menu .sidebar { margin:0; }
+		.filters-map,
+		.sticker-sidebar.col-md-3{ max-width: 242px; }	
+
+	}
+
+	@media (min-width: 992px) {
+
+		.filters-map,
+		.sticker-sidebar.col-md-3,
+		.sticker-sidebar.col-xs-3 { max-width: 292px; }
+
+	} 
+	
+	
+	
+	
+	
+			

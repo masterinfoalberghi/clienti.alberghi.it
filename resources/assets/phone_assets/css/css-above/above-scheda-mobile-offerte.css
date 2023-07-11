@@ -1,0 +1,309 @@
+h1 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+h2, h3 {
+	font-weight: 400;
+	color: #0064d4;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.rating {
+	font-size: 14px;
+	position: relative;
+	top: -5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+a {
+	color: #35a6e8;
+}
+
+a:hover {
+	color: #6ac0d8;
+}
+
+.tornahotel {
+	margin: 20px 0;
+	display: block;
+}
+
+#indice_listini, #datihotel {
+	padding: 0 15px;
+}
+
+.lastminute, .offertaspeciale, .prenotaprima, .bambinigratis {
+	padding: 10px;
+}
+
+.offerta-container-row {
+	background: #eeeeee;
+	margin-bottom: 20px;
+	border: 3px solid #fff;
+}
+
+.offerta-container {
+	background: #ffffff;
+	border: 1px solid #ddd;
+	margin: 0px 0px 10px;
+	padding: 0 15px 15px;
+	position: relative;
+	min-height: 160px;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30);
+	-moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.offerte-top .offerta-container:after {
+	content: " ";
+	background: transparent url("//static.info-alberghi.com/images/top_left.png") top right;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -1px;
+	left: -1px;
+	z-index: 1000;
+}
+
+.offerta-container-info {
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 25px;
+} 
+
+.offerta-container-info .rosso {
+	color: #f44336;
+}
+
+.offerta-container-price {
+	background: #ffffff;
+	text-align: center;
+	margin: 5px;
+	padding: 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.offerta-container-price strong,
+.offerta-container-price b {
+	text-transform: uppercase;
+}
+
+.offerta-container-info ul, .offerta-container-info li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.offerta-container-info li {
+	padding-bottom: 2px;
+}
+
+.offerta-container h1 {
+	margin: 0;
+}
+
+.offerta_speciale_0 {
+	font-family: FontAwesome, Roboto, sans-serif !important;
+	color: #333;
+	font-weight: bold;
+	font-style: italic !important;
+	font-size: 11px !important;
+	padding: 5px;
+}
+
+.offerta_speciale_1 {
+	font-family: FontAwesome, Roboto, sans-serif !important;
+	color: #333;
+	font-weight: bold;
+	font-style: italic !important;
+	font-size: 11px !important;
+	padding: 5px;
+}
+
+/* .datiofferta h2 {
+	background: #195c8a;
+	color: #fff;
+	margin: 5px 0 5px;
+	padding: 15px 25px;
+}
+
+.datiofferta {
+	padding: 10px;
+	background: #f2f4f8;
+}
+
+.datiofferta ul, .datiofferta li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	padding-bottom: 4px;
+	text-transform: lowercase;
+}
+
+.datiofferta li {
+	padding: 3px 5px 10px 35px;
+	position: relative;
+}
+
+.datiofferta li img {
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: auto;
+} 
+
+#datibg {
+	padding: 15px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}*/
+
+.datibg {
+	padding: 15px;
+}
+
+.datibg ul, .datibg li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	padding-bottom: 4px;
+	text-transform: lowercase;
+}
+
+.datibg li {
+	padding: 3px 5px 10px 35px;
+	position: relative;
+}
+
+.datibg li img {
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: auto;
+}
+
+/* #datibg strong {
+	color: #990000;
+} */
+
+/* #datibg small {
+	color: #666;
+} */
+
+.price {
+	padding: 5px 0;
+	font-size: 35px;
+	display: block;
+	white-space: nowrap;;
+}
+
+.testohotel {
+	font-size: 14px;
+	line-height: 1.5em;
+	display: block;
+	margin-top: 5px;
+}
+
+.testohotel {
+	height: 4.5em;
+	overflow: hidden;
+	margin-bottom: 5px;
+	padding-bottom: 30px;
+	position: relative;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.testohotel.all {
+	height: auto;
+	padding-bottom: 0px;
+	margin-bottom: 0;
+	display: block;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: none;
+}
+
+.readall {
+	color: #38A6E9;
+	text-decoration: underline;
+	font-size: 12px;
+	margin: 0 0 20px 0;
+	display: inline-block;
+}
+
+#indice_listini {
+	padding-bottom: 15px;
+}
+
+#indice_listini ul, #indice_listini li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#indice_listini li a {
+	text-transform: lowercase;
+	color: #222;
+	padding: 2px 0 2px 20px;
+	display: block;
+	background: #fff url("//static.info-alberghi.com/images/arrow_select_reverse.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#indice_listini li a:first-letter {
+	text-transform: uppercase;
+}
+
+.stato_offerta {
+	position: absolute;
+	;
+	bottom: 5px;
+	right: 5px;
+}
+
+.stato_offerta.approvata {
+	color: #4CAF50;
+	font-size: 12px;
+	padding: 5px 0;
+}
+
+.stato_offerta.inattesa {
+	color: #FF9800;
+	font-size: 12px;
+	padding: 5px 0;
+}
+
+.chiusoTemp {
+	display: block;
+	background: #f44336;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 10px;
+	margin: -10px;
+	font-weight: bold;
+	text-align:center;
+}

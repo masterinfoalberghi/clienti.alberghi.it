@@ -1,0 +1,33 @@
+	
+  
+  /**
+   * LAYOUT Spot footer
+   */
+	 
+	.spot_footer {
+		 
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		padding: $pad; 
+		color: $chiaro;
+		display: block;
+		background: $marrone url("//static.info-alberghi.com/images/greenbooking.jpg") center center no-repeat; 
+		background-size: 100% 100%;
+		
+		color: $chiaro;
+		
+		height:260px; 
+		margin-left: 5px;
+		text-decoration: none;
+		
+		position:relative;
+		overflow: hidden; 
+		 
+	 }
+	 
+	 .spot_footer_content { position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.3); padding: calc($pad / 2);}
+	 
+	 .spot_footer_title { position: relative; z-index: 5; color: $chiaro;}
+	 .spot_footer_text { position: relative; z-index: 5; }
+	 
+	 .spot_footer_content:hover { background: rgba(0,0,0,0.6); }
+	 

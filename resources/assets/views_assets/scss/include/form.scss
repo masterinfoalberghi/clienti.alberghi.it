@@ -1,0 +1,325 @@
+/**
+   * INCLUDE Form
+   */
+
+.formtag {
+
+	-webkit-border-radius: $raggio;
+	-moz-border-radius: $raggio;
+	border-radius: $raggio;
+	background: none;
+	border: 1px solid transparent;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	user-select: none;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: relative;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="checkbox"],
+textarea,
+select {
+
+	@extend .formtag;
+	border: 1px solid #ddd;
+	background: #fff;
+	vertical-align: middle;
+
+}
+
+input[type="checkbox"] {
+	padding: 8px;
+}
+
+input[type="checkbox"]:checked {
+	background: #fff url("//static.info-alberghi.com/images/check.jpg") center center no-repeat;
+}
+
+
+/**
+	 * Bottoni
+	 */
+
+.btn {
+	@extend .formtag;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+	color: $chiaro;
+	font-size: 12px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	text-align: center;
+	text-decoration: none !important;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.2)
+}
+
+.btn .badge {
+	top: 0;
+	color: $chiaro;
+	font-weight: bold;
+}
+
+.btn .badge.grayButton {
+	top: 0;
+	font-weight: bold;
+	background: #666;
+	color: #fff;
+}
+
+.btn.btn-small {
+	padding: 3px 6px;
+	font-size: 10px;
+}
+
+.btn.btn-big {
+	padding: calc($pad / 3) $pad;
+	font-size: 16px;
+}
+
+.btn.btn-blu {
+	color: $chiaro;
+	background-color: $blu;
+}
+
+.btn.btn-default,
+.btn.btn-cyano {
+	color: $chiaro;
+	background-color: $cyano;
+}
+
+.btn.btn-verde,
+.btn.btn-primary {
+	color: $chiaro;
+	background-color: $verde;
+}
+
+.btn.btn-rosso,
+.btn.btn-danger {
+	color: $chiaro; 
+	background-color: $rosso;
+}
+
+.btn.btn-deep {
+	color: $chiaro;
+	background-color: $deep;
+}
+
+.btn.btn-arancio {
+	color: $chiaro;
+	background-color: $arancio;
+}
+
+.btn.btn-viola {
+	color: $chiaro;
+	background-color: $viola;
+}
+
+.btn.btn-viola-chiaro {
+	color: $chiaro;
+	background-color: $verde-lime;
+}
+
+.btn.btn-acqua {
+	color: $chiaro;
+	background-color: $acqua;
+}
+
+.btn:hover .btn.btn-danger:hover,
+.btn.btn-blu:hover,
+.btn.btn-acqua:hover,
+.btn.btn-default:hover,
+.btn.btn-deep:hover,
+.btn.btn-arancio:hover,
+.btn.btn-viola:hover,
+.btn.btn-viola-chiaro:hover,
+.btn.btn-cyano:hover {
+	opacity: 0.8;
+	color: $chiaro;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+}
+
+.btn-lg {
+	padding: calc($pad / 2) $pad;
+	font-size: 16px;
+}
+
+#submit_button {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin: (calc($pad / 2)) 0 0
+}
+
+
+	/**
+	 * Alert
+	 */
+
+	.alert.alert-ok,
+	.alert.alert-warning,
+	.alert.alert-listing,
+	.alert.alert-danger { background: $rosso; color: $chiaro; padding:calc($pad / 4); margin:calc($pad / 6) 2px calc($pad / 2);  font-size: 12px; display: inline-block;
+
+		-webkit-border-radius: $raggio;
+		-moz-border-radius: $raggio;
+		border-radius: $raggio;
+
+	}
+
+
+
+	.alert.alert-listing { background:$arancio-chiaro; color: $scuro; display: block; font-size: $font-size; }
+	.alert.alert-warning { background: $deep; width:100%;}
+	.alert.alert-ok { background: $verde; }
+
+	.alert.alert-listing a {
+		position: absolute;
+		top: 4px; right:7px;
+		width:30px; height:30px; line-height: 30px;
+		background: $rosso;
+		color: $chiaro;
+		text-align: center;
+		-webkit-border-radius: $raggio;
+		-moz-border-radius: $raggio;
+		border-radius: $raggio;
+	}
+
+// 	/**
+// 	 * Input, select, textarea
+// 	 */
+
+// 	.privacy_checkbox { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; position: relative;}
+// 	.privacy_checkbox i { position: absolute; top:9px; right:7px;}
+// 	label { font-size: 12px; text-transform: uppercase;  color: $grigio-medio; }
+
+// 	.col-form  { position: relative; }
+
+// 	.select_multiline,
+// 	input[type="text"],
+// 	input[type="email"],
+// 	input[type="date"],
+// 	input[type="number"],
+// 	input[type="password"],
+// 	input[type="checkbox"],
+// 	textarea,
+// 	select {
+
+// 		@extend .formtag;
+// 		background: #fff;
+// 		border:1px solid $bordi;
+// 		padding:6px;
+// 		-webkit-border-radius: 3px;
+// 		-moz-border-radius: 3px;
+// 		border-radius: 3px;
+// 		width:250px;
+// 		font-size: 13px;
+
+// 	}
+
+// 	select { padding:6px 30px 6px 6px; }
+
+// 	input[type="checkbox"] { width: auto; vertical-align: middle; padding:8px; margin-left: 0; margin-bottom: 0;  }
+// 	small input[type="checkbox"] { padding:6px;  }
+
+// 	input[type="checkbox"]:checked { background: #fff url("//static.info-alberghi.com/images/check.jpg") center center no-repeat; }
+
+// 	input.daterange { background: #fff url("//static.info-alberghi.com/images/calendar.jpg") right center no-repeat;}
+// 	select { background: #fff url("//static.info-alberghi.com/images/down.jpg") right center no-repeat;  }
+// 	textarea { height: 77px; line-height: $line-height; background: #fff url("//static.info-alberghi.com/images/textarea.jpg")  0px 20px; resize: vertical;  background-origin: content-box; }
+
+// 	input[type="text"]:focus,
+// 	input[type="email"]:focus,
+// 	input[type="date"]:focus,
+// 	input[type="number"]:focus,
+// 	input[type="password"]:focus,
+// 	input[type="checkbox"]:focus,
+// 	textarea:focus,
+// 	select:focus {
+// 		-webkit-box-shadow: none;
+// 		-moz-box-shadow: none;
+// 		box-shadow: none;
+// 		outline:none;
+// 	}
+
+// 	input[type="text"].full,
+// 	input[type="email"].full,
+// 	input[type="date"].full,
+// 	input[type="number"].full,
+// 	input[type="password"].full,
+// 	textarea.full,
+// 	select.full {
+
+// 		width:100%;
+
+// 	}
+
+// 	.datepicker { position: relative; }
+// 	// .dateinfo {
+
+// 	// 	text-align: center;
+// 	// 	display: inline-block;
+// 	// 	font-size: 12px;
+// 	// 	color: #444!important;
+// 	// 	background: rgba(255,255,255,0.5);
+// 	// 	border-radius: 5px;
+// 	// 	padding:2px 5px;
+// 	// 	font-weight: bold;
+
+// 	// }
+
+// 	.left-datepicker .datepicker { left:0 !important; right: auto !important;}
+// 	.right-datepicker .datepicker { left:auto !important; right: 0 !important;}
+
+// 	input.with_icon { padding-left: 30px;}
+// 	input[type="email"] { background: $chiaro url("//static.info-alberghi.com/images/icons/email.jpg") right center no-repeat; }
+
+// 	.select_multiline { margin:0; }
+// 	.select_multiline i.icon-down-open { position: absolute; top:50%; right: 6px; margin-top: -10px; color:#222; font-size: 14px  }
+
+// 	.options_multiline { padding-left: 40px; }
+
+// 	.daterange_select label {   display: block;   }
+// 	.daterange_select input[type="checkbox"] { margin:0 2px 0 0; }
+// 	.daterange_select label span { top:5px; }
+
+// 	// .date_input { margin-bottom: calc($pad / 6); }
+// 	.date_input .select_icon { padding: calc($pad / 6) calc($pad / 6) 8.5px 30px; font-size: 13px; font-weight: normal; display:block; }
+// 	.date_input .select_icon.selected { padding-bottom: calc($pad / 2); }
+
+// 	.date_input .icon-down-open { right:5px; left:auto;}
+// 	.date_info { text-align: left; font-size: 12px; }
+
+// 	.date_input span { position: absolute; top:7px; left:9px; width:18px; font-size: 9px; text-align: center;}
+// 	.icon-calendar { font-size:18px; }
+
+// 	.error-form:before 	 { font-family:"fontello"; content:'\e816'; position: absolute; top:3px; right:9px; color: $rosso; z-index: 300; }
+// 	.success-form:before { font-family:"fontello"; content:'\e808'; position: absolute; top:3px; right:8px; color: $verde; z-index: 300; }
+
+// 	.error-form input,
+// 	.error-form select { background: rgb(255, 205, 210) }
+// 	.success-form select { background: #fff; }
+
+// 	// .success-form i { display:none !important; }
+// 	// .error-form i { display:none !important; }

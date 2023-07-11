@@ -1,0 +1,22 @@
+  
+  /**
+   * LAYOUT Barusso
+   */
+		
+	#barusso { padding:$pad 0 0; display: block;  }
+	#barusso ul { 
+		
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+		
+	}
+	
+	.barusso h3 { font-size: 25px; line-height: 35px; margin-bottom: calc($pad / 4);}
+	
+	.barusso .btn { text-align: center; }
+	.barusso li { display: block; padding:2px 0;  }
+	.barusso li b { margin-left: -2px; }
+	.barusso li a .badge { text-decoration: none !important; }
+	
+	

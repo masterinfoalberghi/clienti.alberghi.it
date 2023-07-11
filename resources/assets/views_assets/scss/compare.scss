@@ -1,0 +1,33 @@
+	
+	/**
+	 * Compare
+	 */	
+
+	@import 'include/config';
+	@import "layout/item-listing-type/piscina-spa";
+	
+	table#compare { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; background: $chiaro; }
+	table#compare td {  padding: calc($pad / 2); -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; background: $grigio-chiaro; vertical-align: top; }
+	table#compare td img{ -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; overflow: hidden; }
+	table#compare td.disabled { background: url(//static.info-alberghi.com/images/pellicola2.jpg) #fff; }
+	table#compare th { text-transform: lowercase; vertical-align: top;  } 
+	table#compare .tag.poi:first-letter,
+	table#compare th:first-letter { text-transform: uppercase; } 
+	table#compare td.immagine h2 { display: inline-block; margin-top: calc($pad / 2); padding-bottom: 0; }
+	table#compare td.immagine .rating {
+	    display: inline-block;
+	    font-size: 16px;
+	    color: $giallo;
+	    position: relative;
+	    top: -5px;
+	    left: 5px;
+	}
+	table#compare a { text-decoration: underline; }
+	table#compare .price {
+	    font-size: 16px;
+	    font-weight: 400;
+	    color: $header;
+	    margin-left: calc($pad / 6);
+	    margin-right: calc($pad / 2); 
+	}
+	table#compare .tag.poi { font-size: $font-size; padding: 0; font-weight: 400 ; text-transform: lowercase; color: $scuro; display: block; background: none;  }

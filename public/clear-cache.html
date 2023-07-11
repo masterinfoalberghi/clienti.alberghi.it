@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+
+		body {
+			max-width: 960px;
+			margin: 1em auto;
+			text-align: center;
+		}
+
+		p#box-content { 
+			font-size: 2rem; 
+			color: #3a3a3a;
+		}
+
+		#link-back { display: none; }
+
+		@keyframes blink {
+			0% { opacity: .2; }
+			20% { opacity: 1; }
+			100% { opacity: .2; }
+		}
+
+		#box-content, #box-content span {
+			animation-name: blink;
+			animation-duration: 1.4s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: both;
+		}
+
+		.saving span:nth-child(2) {
+			animation-delay: .2s;
+		}
+
+		.saving span:nth-child(3) {
+			animation-delay: .4s;
+		}
+
+	</style>
+
+	<title>Info-Alberghi Pulizia Cache</title>
+
+</head>
+<body>
+
+	<p id="box-content">Pulizia in corso<span>.</span><span>.</span><span>.</span></p>
+
+	<p>
+		<a id="link-back" href="//www.info-alberghi.com"> Torna su Info Alberghi </a>
+	</p>	
+
+	<script>
+		(() => {
+			let box = document.getElementById('box-content');
+			let linkBack = document.getElementById('link-back');
+
+			let hotelIds = [1875, 1883, 1884, 1890, 1891, 1892, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906];
+
+			for (let i = 0, lunghezza = hotelIds.length; i < lunghezza; i++) {
+				fetch(`https://www.info-alberghi.com/hotel.php?id=${hotelIds[i]}`, { method: 'post' }).then(() => {
+					console.log('cleared cache ', hotelIds[i])
+
+					if (i === lunghezza - 1) {
+						box.textContent = 'Finito con successo!'
+						box.style.animation = 'none'
+						linkBack.style.display = 'block'
+					}
+				})
+
+			}
+
+		})()
+	</script>
+</body>
+</html>

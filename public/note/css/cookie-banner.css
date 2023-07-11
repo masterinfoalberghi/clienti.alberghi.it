@@ -1,0 +1,56 @@
+#cookie-message {
+	--main_CM_color: #35A6E8;
+	--button_color: #1977d0;
+	--link_color: #090909;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background: var(--main_CM_color);
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 -.25rem .25rem 0 rgba(0,0,0,0.4);
+	z-index: 9999;
+	display: none;
+}
+	#cookie-message p {
+		color: var(--link_color);
+		font-size: 1em;
+		line-height: 1.2;
+		display: inline-block;
+		max-width: 40em;
+		margin: 0 1rem;
+	}
+		#cookie-message a {
+			color: var(--link_color);
+			text-decoration-line: underline !important;
+		}
+		#cookie-message button {
+			cursor: pointer;
+			background: var(--button_color);
+			color: #fff;
+			font-family: inherit;
+			font-size: inherit;
+			border: none;
+			border-radius: .125rem;
+			padding: .5rem 1rem;
+		}
+
+@media (max-width: 640px) {
+	#cookie-message body {
+		justify-content: center;
+	}
+	#cookie-message {
+	flex: 1;
+	flex-direction: column;
+	align-self: center;
+	max-height: 60%;
+	width: 99%;
+	box-shadow: 0 .25rem .25rem 0 rgba(0,0,0,0.4);
+	}
+		#cookie-message p {
+			max-width: 75%;
+			margin-bottom: 2rem;
+		}
+}

@@ -1,0 +1,114 @@
+	
+	/**
+	 * CONTENT Gallery
+	 */	
+	 
+	.gallery { 
+		
+		height: 500px 
+	
+	} 
+	
+	.gallery .slick-list { 
+		
+		overflow: visible; 
+	
+	}
+	
+	.gallery .slick-track.iniziale { 
+		
+		transform: translate3d(0,0,0) !important 
+		
+	}
+	
+	.gallery-item { 
+		
+		position:absolute; 
+		top:0;
+		width:500px; 
+		height: 500px !important; 
+		display: block; 
+		background: $grigio-chiaro;  
+		outline:none;  
+		 
+	}
+	
+	.gallery-item img { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; 
+		overflow: hidden;
+		width:500px; 
+		height: 500px !important; 
+		
+	}
+	
+	.gallery-item .slick-text {
+		
+		border-radius: 0px 0px $raggio $raggio;
+		-moz-border-radius: 0px 0px $raggio $raggio;
+		-webkit-border-radius: 0px 0px $raggio $raggio;
+		position: absolute; 
+		bottom:0; 
+		left:0; 
+		width:500px; 
+		padding:calc($pad / 2); 
+		z-index: 550; 
+		background: $grigio-scuro; 
+		color: $chiaro; 
+		
+	}
+	
+	.gallery .slick-dots {
+	    position: absolute;
+	    bottom: -45px;
+	    display: block;
+	    width: 100%;
+	    padding: 0;
+	    list-style: none;
+	    text-align: center;
+	}
+	
+	.gallery .slick-dots li {
+	    position: relative;
+	    display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    margin: 0 5px;
+	    padding: 0;
+	    cursor: pointer;
+	}
+	
+	.gallery .slick-dots li button {
+	    font-size: 0;
+	    line-height: 0;
+	    display: block;
+	    width: 20px;
+	    height: 20px;
+	    padding: 5px;
+	    cursor: pointer;
+	    color: transparent;
+	    border: 0;
+	    outline: none;
+	    background: transparent;
+	}
+	
+	.gallery .slick-dots li button::before {
+	    font-family: slick;
+	    font-size: 24px;
+	    line-height: 20px;
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    width: 20px;
+	    height: 20px;
+	    content: "•";
+	    text-align: center;
+	    opacity: 0.30;
+	    color: black;
+	    -webkit-font-smoothing: antialiased;
+	}
+	
+	.gallery .slick-dots li.slick-active button:before {
+	    opacity: .75;
+	    color: black;
+	}

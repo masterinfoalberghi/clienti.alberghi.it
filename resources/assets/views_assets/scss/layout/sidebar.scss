@@ -1,0 +1,69 @@
+	  
+  /**
+   * LAYOUT Sidebar
+   */
+   
+	#sidbar { max-width:390px;}
+	.sidebar { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		padding: calc($pad / 2);
+		margin-bottom:  (calc($pad / 4));
+			
+	}
+	
+	.sidebar-verde { background: $verde-chiaro; }
+	.sidebar-arancio { background: $arancio; margin-bottom: 0 ; position: relative; }
+	
+	.sidebar header h3 { font-size: 17px; color: $rosso; text-transform: uppercase; font-weight: normal; padding-bottom: calc($pad / 4);  }
+	
+	.sidebar nav.menu-sidebar ul { padding-bottom: $pad; }
+	
+	.sidebar nav ul { margin-bottom: $pad; }
+	.sidebar nav ul.no-margin { margin:0px }
+	.sidebar nav ul li { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; padding:2px calc($pad / 2); display: block; margin: 0 (calc($pad / -3)); border-bottom: 1px solid $hightlight; }
+	.sidebar nav ul li:last-child { border-color: transparent;}
+	.sidebar nav ul li.current { background: $hightlight2; color: $scuro; border-bottom:1px solid transparent; }
+	
+	.sidebar nav ul li b { font-weight: normal; color: $scuro; background: $verde; padding:5px; margin-left: -5px;   }
+	
+	.sidebar nav ul li a { color: $verde-scuro; display: block; font-weight: normal  }
+	.sidebar nav ul li span:nth-child(1) { text-overflow: ellipsis; max-width: 80%; vertical-align: middle;  white-space: nowrap; display: inline-block; overflow: hidden;  }
+	
+	.sidebar nav ul li i { color: $grigio-scuro; }
+	.sidebar nav ul li.evidenziato {   background: $hightlight; font-weight:bold; padding:2px calc($pad / 2);  }
+	.sidebar nav ul li.evidenziato a { font-weight:bold; border:none;  }
+
+	.sidebar nav ul li.evidenziato.lastMinute { margin-bottom: 2px; background: $rosso;}
+	.sidebar nav ul li.evidenziato.offerteSpeciali {  background: $acqua;}
+
+	.sidebar nav ul li.evidenziato.lastMinute a,
+	.sidebar nav ul li.evidenziato.offerteSpeciali a { color: $chiaro;  }
+	
+	.sidebar nav ul li.current.lastMinute  		{  background: $rosso; }
+	.sidebar nav ul li.current.offerteSpeciali 	{  background: $acqua;}
+
+	.sidebar nav ul li.current.lastMinute a,
+	.sidebar nav ul li.current.offerteSpeciali a {  color: $chiaro; }
+
+	.mappa {  height:64px; display: block; border:1px solid $bordi; position: relative; width:auto; 
+		
+		background-position: center center;
+		background-repeat: no-repeat; 
+		-webkit-border-radius: $raggio;
+		-moz-border-radius: $raggio;
+		border-radius: $raggio;
+		
+		
+	}
+	
+	.mappa img { width:100%; height:auto; }
+
+	.filters-map,
+	.sticker-sidebar.col-sm-3,
+	.sticker-sidebar.col-xs-3 { max-width: 290px; }
+
+	.sticker-sidebar { z-index: 998; }
+
+	
+	

@@ -1,0 +1,350 @@
+  /**
+   * LAYOUT Item Listing
+   */
+
+  @import "../include/config";
+  @import "table";
+  @import "pdf";
+  @import "item-listing-type/prenota-prima";
+  @import "item-listing-type/offers";
+  @import "item-listing-type/lastminute";
+  @import "item-listing-type/table-listing";
+  /**
+	 * Configurazione
+	 */
+
+  $height: 220px;
+  /**
+	 * Elementi listing
+	 */
+
+  .item-listing-container {
+      display: block;
+      clear: both;
+  }
+
+  .item-listing {
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+      position: relative;
+      margin-bottom: calc($pad / 4);
+      min-height: $height;
+      border: 1px solid $grigio-chiaro-odd;
+      overflow: hidden;
+  }
+
+
+
+  .evidenziati .item-listing:not(.not_mark_as_evidenza):after,
+  .item-listing.evidenziato:not(.not_mark_as_evidenza):after {
+      content: " ";
+      background: transparent url("//static.info-alberghi.com/images/top_left.png") top right;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -2px;
+      left: -2px;
+      z-index: 100;
+  }
+
+  /*
+	.evidenziati .item-listing:not(.not_mark_as_evidenza),
+	.item-listing.evidenziato:not(.not_mark_as_evidenza) { 
+		
+		-webkit-border-radius: $raggio;
+		-moz-border-radius: $raggio;
+		border-radius: $raggio;  
+		border: 1px solid #e0bb16;
+		 background: rgba(224, 187, 22, 0.1) 
+	 }
+	 
+	*/
+  /*.evidenziati .item-listing:not(.not_mark_as_evidenza):hover { 
+		background-color: #f7f6f1!important; 
+		border:1px solid #e0bb16!important;
+	}*/
+
+  .item-listing.top {
+      background-color: #eff6f8;
+      border: 1px solid #7eb6c8;
+  }
+
+  .item-listing-distance a {
+      color: inherit;
+  }
+
+
+  .item-listing-content {
+      width: 700px;
+      padding: (calc($pad / 3)) 0 0 230px;
+      min-height: 218px;
+  }
+
+  .item-listing-middle {
+    //   padding: 0 0 (calc($pad / 3)) 0;
+    padding: 0;;
+  }
+
+  .item-listing-title {
+      max-width: 90%
+  }
+
+  .item-listing-title h2 {
+      display: inline-block;
+      font-size: 24px;
+      padding: calc($pad / 4) 0 calc($pad / 3) 0;
+      font-weight: normal;
+  }
+
+
+
+
+  .item-listing-address b {
+      font-style: normal;
+  }
+
+  .item-listing-address span {
+      //   color: $cyano;
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  .item-listing-address span i {
+      color: $header;
+  }
+
+  //$grigio-medio-chiaro; 
+  .item-listing-address span i::before {
+      margin: 0;
+  }
+
+  .item-listing-address span.localita {
+      //   color: $cyano;
+      font-style: normal;
+      font-weight: bold;
+  }
+
+  .item-listing-address span.localita i {
+      color: $header;
+      padding: 0 2px 0 3px;
+  }
+
+  //$grigio-medio-chiaro; 
+  .item-listing-address span.localita i::before {
+      margin: 0;
+  }
+
+  .item-listing-address span.indirizzo {
+      //   color: $cyano;
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  .item-listing-address span.indirizzo i {
+      color: $header;
+  }
+
+  //$grigio-medio-chiaro; 
+  .item-listing-address span.indirizzo i::before {
+      margin: 0;
+  }
+
+  .item-listing-figure {
+      border-right: 1px solid $bordi;
+      border-bottom: 1px solid $bordi;
+      width: 220px;
+      height: $height;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+  }
+
+
+
+  .item-listing-testo {
+      width: 90%;
+      margin-top: 5px;
+  }
+
+  /**
+	 * Favoriti
+	 */
+
+  .item-listing-favorites {
+      font-size: 22px;
+      position: absolute;
+      top: 18px;
+      right: 165px + (calc($pad / 3));
+  }
+
+  .item-listing-favorites .hearth.disattiva_preferito {
+      color: $rosso;
+  }
+
+  .item-listing-favorites a {
+      text-decoration: underline;
+  }
+
+  .item-listing-favorites a span {
+      display: none;
+  }
+
+  .item-listing-address {
+      display: block;
+  }
+
+  /**
+	 * Labels
+	 */
+
+  .tag.click {
+      position: absolute;
+      top: calc($pad / 6);
+      right: calc($pad / 6);
+      z-index: 350
+  }
+
+  .tag.apertura,
+  .tag.foto {
+      background: #2196F3;
+      color: $chiaro;
+      position: absolute;
+      bottom: calc($pad / 6);
+      left: calc($pad / 6);
+      z-index: 300
+  }
+
+  .tag.click,
+  .tag.alert,
+  .tag.apertura {
+      background: $rosso;
+      color: $chiaro;
+  }
+
+  .tag.click {
+      background: $arancio;
+      color: $chiaro;
+  }
+
+  .tag.apertura {
+      left: 58px
+  }
+
+  .tag.info_distanza {
+      position: absolute;
+      top: calc($pad / 6);
+      left: calc($pad / 6);
+      z-index: 350
+  }
+
+  .tag.info_distanza {
+      background: $rosso;
+      color: $chiaro;
+  }
+
+  .tag>b.rosso {
+      background: none !important;
+      color: #fff;
+  }
+
+  /**
+	 * Prezzo
+	 */
+
+  .item-listing-price {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(186, 186, 186, 0.15);
+      width: 160px;
+      padding: (calc($pad / 3));
+      border-left: 1px solid $grigio-chiaro-odd;
+  }
+
+  .item-listing-price .price {
+      font-size: 24px;
+      font-weight: normal;
+      color: $blu;
+      margin-left: calc($pad / 4);
+  }
+
+  .item-listing-price .labels {
+      display: inline-block;
+      width: 30px;
+  }
+
+  .item-listing-select {
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+      padding-top: calc($pad / 4);
+  }
+
+  .item-listing-price-cost {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: (calc($pad / 3));
+  }
+
+  .item-listing-button {
+      width: 100%;
+      margin: calc($pad / 4) 0;
+  }
+
+  /**
+	 * Punti di forza
+	 */
+
+  .puntidiforza {
+      font-size: 14px;
+      padding: calc($pad / 6) 0;
+  }
+
+  .puntidiforza:first-letter {
+      text-transform: uppercase
+  }
+
+  .puntidiforza b {
+      color: #000;
+      border-bottom: 4px solid $evidenziato;
+  }
+
+  /**
+	  * Css
+	  */
+
+  .css-label {
+      color: $scuro;
+      line-height: normal;
+  }
+
+  .item-listing-checkbox {
+      position: relative;
+      top: -1px;
+  }
+
+  /*  
+	  * Offerte in evidenza
+	  */
+
+  .offertaInEvidenza {
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+      font-size: 16px;
+      padding: 5px 0;
+      color: $rosso;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 5px;
+  }
+
+  .offertaInEvidenza strong {
+      border-bottom: 2px solid $rosso;
+  }

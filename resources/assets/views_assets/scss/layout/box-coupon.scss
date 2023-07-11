@@ -1,0 +1,23 @@
+  
+  /**
+   * LAYOUT Box Coupon
+   */
+			
+	.box-coupon {  -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; position:relative; overflow: hidden; }
+	
+	.box-coupon-content-left,
+	.box-coupon-title { padding: calc($pad / 2); }
+	
+	.box-coupon-title {  text-transform: uppercase; font-weight: normal;  -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; color:#fff !important; border-bottom: 1px solid $chiaro; }
+	.box-coupon-content { height: 346px;  background:$grigio-chiaro; }
+	
+	.box-coupon-price {   color: $chiaro; background: $marrone; text-align: center;  } 	
+	.box-coupon-price-title { font-size: 24px; margin-top: 110px;  text-transform: uppercase; display: block;  }
+	.box-coupon-price-value { font-size: 70px; font-weight: bold;  }
+	
+	
+	.box-coupon-content ul { padding-left: (calc($pad / 2)); }
+	.box-coupon-content .label_checkbox { color: $color; }
+	.box-coupon-content a { text-decoration: underline; }
+	
+	.box-coupon-content-left-send { background:$grigio-chiaro; padding: calc($pad / 2); margin:calc($pad / -2); margin-top: 0; margin-right: -10px; }

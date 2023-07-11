@@ -1,0 +1,53 @@
+  
+  /**
+   * LAYOUT Cookielaw
+   */
+			
+	@import "../include/config";
+		
+	#eucookielaw-container {
+		 
+		position: fixed; 
+		top:0px;
+		left:0px; 
+		right:0px; 
+		background:  $scuro;
+		z-index: 10000;
+		color: $chiaro;
+		-webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+		-moz-box-shadow: 	0px 10px 20px rgba(0,0,0,0.3);
+		box-shadow: 		0px 10px 20px rgba(0,0,0,0.3);
+		
+	}
+	
+	#eucookielaw-background { 
+		
+		position: fixed; 
+		top:0px;
+		left:0px; 
+		right:0px; 
+		bottom:0px;
+		z-index: 9999;
+		background: rgba(0,0,0,0.2) url("//static.info-alberghi.com/images/pellicola.png");
+	 	display: block;  
+		
+	}
+	
+	.banner-agreement-buttons { margin:30px 0 30px 0; }
+	.eucookielaw-banner p { margin-bottom: 2px; }
+	.eucookielaw-banner { padding: $pad 0; }
+	
+	.eucookielaw-banner a { margin-right: 10px; color: $chiaro; text-decoration: underline; }
+	
+	.disagree-button { position: relative; z-index: 1000000000;}
+	
+	@media (max-width: 768px) { 	
+	
+		.eucookielaw-banner { 
+			padding: $pad $pad*2 ;
+		}
+		.eucookielaw-banner p { margin-bottom: 10px; }
+		
+
+	}
+		

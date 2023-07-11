@@ -1,0 +1,20 @@
+	
+	/**
+	 * Wishlist
+	 */		
+
+	@import 'include/config';
+		
+	@import "layout/briciole";
+	@import "layout/loading";
+	@import "layout/rangepicker";
+	@import "layout/preventivo";
+	@import "layout/sidebar";
+	@import "layout/note";
+	
+	
+	.item-listing-content { width: auto; }
+	
+	#submit_button { width: auto; }
+	#sidebar-preventivo h2, #sidebar-preventivo h3, #sidebar-preventivo h4 { text-align: left; }
+	#sidebar-preventivo header { margin: (calc($pad / -2)) (calc($pad / -2)) 0 (calc($pad / -2)); padding: calc($pad / 2); }

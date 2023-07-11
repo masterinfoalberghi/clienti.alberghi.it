@@ -1,0 +1,1 @@
+Per avere pi&ugrave; informazioni pu&ograve; chiamarci al numero <b>0541.29187</b> o contattare l'indirizzo email reclami@info-alberghi.com.<br /><br>

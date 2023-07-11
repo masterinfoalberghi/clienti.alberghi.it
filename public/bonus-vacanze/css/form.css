@@ -1,0 +1,134 @@
+#form-domande {
+    background-color: #EEEEEE;
+}
+
+.title-form {
+    font-size: 26px;
+}
+
+.form-subtitle {
+    font-size: 20px;
+}
+
+.title-form {
+    text-align: center;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #185278;
+    font-weight: 300;
+    margin-top: .5em;
+}
+
+section#form-domande h2 {
+    line-height: 33px;
+}
+
+form#form-di-contatto-covid-19 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 270px;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.primo-box,
+.secondo-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* BOTTONE INVIA */
+
+#submit_form.button-primary {
+    padding: 1em 2em;
+    font-weight: bold;
+    background-color: forestgreen;
+    color: whitesmoke;
+    border-radius: 15px;
+}
+
+#submit_form {
+    margin-bottom: 30px;
+}
+
+.primo-box,
+.secondo-box,
+.bottone-invia {
+    width: 70%;
+}
+
+.area-testo {
+    height: 150px;
+    padding: 10px;
+}
+
+input[name="email"],
+.area-testo {
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 5px;
+}
+
+.check-privacy-area {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+.check-gdpr {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 1.4;
+    width: 80%;
+}
+
+.check-gdpr a {
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    form#form-di-contatto-covid-19 {
+        width: 100%;
+    }
+    .primo-box,
+    .secondo-box {
+        width: 100%;
+        display: block;
+    }
+    .check-privacy-area,
+    .bottone-invia,
+    input[name="email"],
+    .area-testo,
+    label {
+        width: 100%;
+        margin: 0;
+    }
+    #form-domande {
+        height: auto;
+    }
+    .bottone-invia {}
+}
+
+.grazie-mille {
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 25px;
+    max-width: 39rem;
+    margin: 1em auto;
+}

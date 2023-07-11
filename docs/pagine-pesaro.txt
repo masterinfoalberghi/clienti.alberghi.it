@@ -1,0 +1,45 @@
+
+
+
+
+
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/elenco-hotel [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/5-stelle [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/4-stelle [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/3-stelle [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/2-stelle [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/1-stella [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/residence [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/bed-and-breakfast [OR]
+
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/piscina [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/centro-benessere-spa [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/wi-fi-gratis [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/hotel-disabili/pesaro.php [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/celiaci [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/pet-friendly [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/bike [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/parcheggio [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/bonus-vacanze [OR]
+
+
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/all-inclusive [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/pensione-completa [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/mezza-pensione [OR]
+RewriteCond %{REQUEST_URI} ^(ing|fr|ted){0,1}\/marche/pesaro/solo-dormire [OR]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

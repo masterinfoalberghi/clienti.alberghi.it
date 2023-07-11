@@ -1,0 +1,155 @@
+
+#covid {
+    background-color: #FFFDE7;
+    padding: 12px;
+    /* display: flex;
+    text-align: center; */
+    border-bottom:1px solid #ddd;
+}
+
+#covid-table { line-height: 24px;}
+#covid-table i { color: #FF9800;  }
+#covid-table a { color: #38A6E9 !important; float:right; }
+
+.page-cms #covid,
+.page-scheda #covid,
+.page-home #covid {
+    margin:53px 0px 0px;
+}
+
+.page-filter-listing #covid,
+.page-listing #covid {
+    margin:58px 0px 0px;
+}
+
+.header-fix.page-listing #covid {
+    margin-top: 138px;
+}
+
+
+/** Homepage */
+
+#covid-table { 
+    padding:0px;
+    color: #222; 
+    font-size:14px; 
+} 
+
+ /* 
+#covid-table tr,
+#covid-table td,
+#covid-table th,
+#covid-table { font-size: 14px; padding:3px; border:1px solid #eed3a8; border-collapse: collapse;}
+#covid-table td { text-align: left;}
+#covid-table th { width: 33.3%}
+#covid-table { width:100%; padding:0px; border-radius:4px; overflow: hidden; } */
+
+/** Pagine */
+
+#covid .icona {
+    color: #fff;
+    padding-top: 5px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+#covid #alert-description {
+    color: #fff;
+    padding: 0px;
+    line-height: 20px;
+    width:100%;
+}
+
+#covid #alert-description span#alert {
+    padding: 1px 11px;
+    background-color: #f24a46;
+    color: #fff;
+    margin-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#covid #alert-description span#bonus {
+    padding: 1px 11px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#covid #alert-description a {
+    text-decoration: underline;
+}
+
+#covid #alert-description a:hover {
+    color: #1A5C87;
+    text-decoration: none;
+}
+
+#covid_hotel {
+    background-color: #1565C0;
+    border: 1px solid #033e82;
+    display: flex;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    margin: 15px 0;
+}
+
+#covid_hotel .icona {
+    color: #fff;
+    padding-top: 5px;
+}
+
+#covid_hotel #alert-description {
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    position: relative;
+}
+
+#covid_hotel #alert-description p {
+    margin: 0;
+    padding: 0;
+}
+
+#covid_hotel #alert-description span#alert {
+    font-size: 14px;
+    padding: 5px 11px;
+    background-color: #fff;
+    color: #033e82;
+    margin-right: 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#covid_hotel #alert-description a {
+    text-decoration: underline;
+}
+
+#covid_hotel #alert-description a:hover {
+    text-decoration: none;
+}
+
+#serviziCovid { padding: 10px; border-radius:3px; border: 5px solid #ddd; margin-top:-17px; box-shadow:0 2px 3px rgba(0,0,0,0.2); background-color: #fff;}
+     .serviziCovid { padding:15px; }
+     .serviziCovid li {
+         margin:0; list-style: none;
+         padding: 0 0 0 30px;
+         position: relative;
+         line-height: 24px;
+     }
+     .serviziCovid b { margin-bottom: 10px; display: block; }
+     .serviziCovid i {
+         position: absolute;
+         top: 0;
+         left: 0;
+         color: #8CC152;
+     }

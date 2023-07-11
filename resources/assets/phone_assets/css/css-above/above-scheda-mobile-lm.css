@@ -1,0 +1,34 @@
+.lastminute .offerta-container-price .price {
+    color: #f44336;
+}
+
+.lastminute h2 {
+    text-align: center;
+    background: #f44336;
+    color: #fff;
+    margin: 5px 0 5px;
+    padding: 15px 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+	font-size: 18px;
+}
+
+.lastminute .offerta-container-price {
+    border: 2px solid #f44336;
+}
+
+.chiusoTemp {
+    display: block;
+    background: #f44336;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 10px;
+    margin: -10px;
+    font-weight: bold;
+    text-align:center;
+}

@@ -1,0 +1,18 @@
+  
+  /**
+   * LAYOUT Menu secondario
+   */
+	
+	.menu-secondario-container {  margin-top:calc($pad / 3); }
+	.menu-secondario-item { padding:calc($pad / 6); -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; height:33px; }
+	.menu-secondario-item .badge { top: -2px; color: $chiaro; }
+	
+	.menu-secondario-item.right { border:none !important;; float:right;  }
+	.menu-secondario-item.tag-menu a { color: $chiaro;}
+	.menu-secondario-item.offers { background: $acqua}
+	.menu-secondario-item.prenotaprima { background: $verde-lime}
+	.menu-secondario-item.lastminute { background: $rosso}
+	.menu-secondario-item.children-offers { background: $cyano}
+	
+	.menu-secondario-item.selected {background: $blu;}
+	.menu-secondario-item.selected a { color: $chiaro; }

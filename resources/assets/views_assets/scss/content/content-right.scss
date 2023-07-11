@@ -1,0 +1,24 @@
+	
+	/**
+	 * CONTENT RIGHT
+	 */	
+	 
+	.right .main-content-image-container { 
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		right:50%;
+		left:0;
+		margin-right:calc($pad / 6);
+		text-align: right; 
+	}
+	
+		
+	.right .main-content-text {
+		text-align: left;
+	}
+	
+	.right .main-content-image {
+		float:right;
+	}
+	
+	
+	

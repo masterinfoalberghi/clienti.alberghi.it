@@ -1,0 +1,117 @@
+
+<!-- Homepage -->
+
+<url>
+	<loc>https://www.info-alberghi.com/</loc>
+	<lastmod>2019-02-Mon</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+
+<!-- statica -->
+
+<url>
+	<loc>https://www.info-alberghi.com/ted/trasporti.php</loc>
+	<lastmod>2018-04-12 16:26:12</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.1</priority>
+</url>
+
+<!-- listing -->
+
+<url>
+	<loc>https://www.info-alberghi.com/ted/italia-in-miniatura.php</loc>
+	<lastmod>2018-12-03 20:46:01</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- localita -->
+
+<url>
+	<loc>https://www.info-alberghi.com/ted/riccione.php</loc>
+	<lastmod>2018-12-04 04:18:58</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.7</priority>
+</url>
+
+<!-- Hotel -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- Hotel: Offerte -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&offers</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- Hotel: Prenotaprima -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&prenotaprima</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- Hotel: Offerte bambini -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&children-offers</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- Hotel: Lastminute -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&lastminute</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- Hotel: Listino prezzi -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&price-list</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.9</priority>
+</url>
+
+<!-- Hotel: Contatti -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&contact</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>yearly</changefreq>
+	<priority>0.1</priority>
+</url>
+
+<!-- Hotel: Gallery -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&gallery</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.6</priority>
+</url>
+
+<!-- Hotel: Mappa -->
+
+<url>
+	<loc>https://www.info-alberghi.com/hotel.php?id=1&map</loc>
+	<lastmod>2019-02-14 10:33:27</lastmod>
+	<changefreq>yearly</changefreq>
+	<priority>0.1</priority>
+</url>

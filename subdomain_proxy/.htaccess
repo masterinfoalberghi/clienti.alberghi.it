@@ -1,0 +1,24 @@
+####################################################################
+# Subdomain Proxy
+####################################################################
+#
+# È il meccanismo per i terzi livelli
+# http://hotelperdisabili.info-alberghi.com/
+# http://fierarimini.info-alberghi.com/
+#
+####################################################################
+
+
+RewriteEngine on
+
+# Queste le lascio gestire direttamente da apache
+RewriteRule \.(css|jpe?g|gif|png)$ - [L]
+
+# ridireziona tutto quello che non è una dir o un file fisico su un certo script
+# questo vuol dire che una chiamata diretta alla index.php
+# propone la index.php ma senza il parametro url
+# perchè appunto non passa attraverso redirect
+# NB nel parametro "url" non comparirà la eventuale query string
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1

@@ -1,0 +1,25 @@
+	
+	/**
+	 * CONTENT Barusso
+	 */	
+	 
+	.barusso.main-content-container {
+		
+		
+		padding-bottom: $pad;
+		background: #f5f5f5;
+		border-top:1px solid $grigio-chiaro;
+		border-bottom:1px solid $grigio-chiaro;
+		
+	}
+	
+	/**
+	 * Barusso nelle pagine
+	 */
+	
+	.main-content-text .barusso ul,
+	.main-content-text .barusso li { padding:0; margin:0; list-style: none; display: inline-block; }
+	
+	
+	.main-content-text .barusso li:after { content:", "; padding-right: calc($pad / 4); }
+	.main-content-text .barusso li:last-child:after { content:"."; }

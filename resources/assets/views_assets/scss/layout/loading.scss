@@ -1,0 +1,27 @@
+  
+  /**
+   * LAYOUT Loading
+   */
+			
+	
+	.loading-ajax { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; 
+		color:#fff; background: rgba(0,0,0,0.2) url("//static.info-alberghi.com/images/pellicola.png") top left; 
+		position: fixed; top:0; left:0; right:0; bottom:0; z-index: 500; 
+		display:none;
+		padding: calc($pad / 2); 
+		font-size: 18px;  
+		 
+	}
+	
+	.loading-ajax span {
+		
+		padding:calc($pad / 2); 
+		background: rgba(0,0,0,0.2);
+		display: inline-block;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		
+	}

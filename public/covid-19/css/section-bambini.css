@@ -1,0 +1,60 @@
+section
+{
+	padding: 70px;
+}
+
+.bambini #brand {
+	position: unset;
+}
+.bambini #menu-principale {
+	position: unset;
+}
+
+.bianca {
+	background-color: white;
+}
+
+.gialla{
+	 background-color: #ffcc66;
+}
+
+.grigia {
+	background-color: #faf9f9;
+}
+.blu {
+	background-color: #185278;
+}
+section.blu p, section.blu h2, section.blu h3 {
+	color: white;
+}
+
+.bambini h1 {
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 25px;
+}
+
+.introduzione {
+	background-image: url('../img/bambini-header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+
+	height: 500px;
+}
+@media screen and (max-width: 500px) {
+	.introduzione { height: 630px; }
+}
+@media screen and (min-width: 1440px) {
+	.introduzione { padding-top: 40px; }
+}
+
+.introduzione .intro {
+	margin: 0 auto;
+
+	color: whitesmoke;
+}
+
+

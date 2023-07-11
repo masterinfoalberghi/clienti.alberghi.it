@@ -1,0 +1,40 @@
+ 	h1 { font-size: 22px; font-weight: normal;}
+	h2,h3 { font-weight: 400;color: #0064d4; text-transform: uppercase; text-align: left;  }
+	.rating { font-size: 14px; position:relative; top:-5px; display: inline-block; vertical-align: middle; }
+	a { color: #35a6e8;}
+	a:hover { color: #6ac0d8; }
+	#datihotel { padding:0 15px; }
+
+	.tornahotel { margin:20px 0; display: block;}
+	
+	#puntiinteresse h3 {
+	    background: #35a6e8;
+	    color: #fff;
+	    margin: -15px -15px 15px;
+	    padding: 3px 25px;
+	}
+	
+	
+	#puntiinteresse { padding:0 15px; border-top:1px solid rgba(0, 0, 0, 0.1);  overflow:visible;}
+	#puntiinteresse h3 { margin-top: 0; margin-bottom: 15px; }
+	#puntiinteresse ul, 
+	#puntiinteresse li { margin:0; padding:0; list-style: none; display: block; padding-bottom: 4px;  text-transform: lowercase;  }
+	#puntiinteresse li { padding: 3px 5px 10px 35px;  position: relative;  }
+	#puntiinteresse li img { vertical-align: middle; position: absolute; top:0; left:0; width:24px; height: auto;}
+	
+	#map { height:400px; margin:0px -15px 0px; background: #fff;  border-top:1px solid rgba(0, 0, 0, 0.1);  }
+
+	.chiusoTemp {
+		display: block;
+		background: #f44336;
+		color: #fff;
+		text-transform: uppercase;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-size: 12px;
+		padding: 10px;
+		margin: -10px;
+		font-weight: bold;
+		text-align:center;
+	}

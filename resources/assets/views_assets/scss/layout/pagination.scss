@@ -1,0 +1,63 @@
+  /**
+   * LAYOUT Paginazione
+   */
+
+  .pagination {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .pagination li {
+      padding: 0;
+  }
+
+  .pagination li:first-child a,
+  .pagination li:last-child a,
+  .pagination li.disabled a {
+      background: none;
+  }
+
+  .pagination li.disabled,
+  .pagination li.active,
+  .pagination li a {
+      -webkit-border-radius: $raggio;
+      -moz-border-radius: $raggio;
+      border-radius: $raggio;
+      margin: 1px;
+      width: 30px;
+    //   height: 30px;
+      line-height: 30px;
+      display: inline-block;
+  }
+
+  .pagination li.page-item-first a,
+  .pagination li.page-item-last a {
+      width: auto !important;
+  }
+
+  .pagination li.page-item {
+      background: $grigio-chiaro;
+  }
+
+  .pagination li.active {
+      background: $blu;
+      color: $chiaro;
+  }
+
+  .pagination li.active a {
+      color: $chiaro;
+  }
+
+  .pagination li.page-item:hover a,
+  .pagination li.page-item a:hover {
+      color: $chiaro !important;
+      background: $cyano;
+  }
+
+  .page-item-first a {
+      padding-right: 30px;
+  }
+
+  .page-item-last a {
+      padding-left: 30px;
+  }

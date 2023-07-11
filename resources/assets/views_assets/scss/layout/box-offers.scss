@@ -1,0 +1,82 @@
+  
+  /**
+   * LAYOUT Box Offers
+   */
+	
+
+	
+	
+	.box-offers-article { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; background: $grigio-chiaro; position:relative; border:2px solid $bordi}
+	.box-offers-title { padding: calc($pad / 2) 0; }
+	
+	.box-offers-article-content,
+	.box-offers-article-title { padding: calc($pad / 2); }
+	.box-offers-article-title { text-transform: uppercase; font-weight: normal; }
+	
+	.box-offers-article-top,
+	.box-offers-article-verifica {  
+		
+		-webkit-box-shadow: $shadow; -moz-box-shadow: $shadow; box-shadow: $shadow;;
+		background: $chiaro; 
+		position: absolute; top:11px; right:calc($pad / 2); 
+		font-size: 12px; color:#fff; font-weight: 400; line-height:28px; text-align: center;
+		width:30px; height:30px;  
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		border:2px solid rgba(0,0,0,0.1);
+		
+	 }
+
+	.box-offers-article-top { right:40px; color: $rosso }
+	
+	.box-offers-article-content-up { margin-bottom: calc($pad / 4); padding-bottom: calc($pad / 6) }
+	.box-offers-article-verifica .check  { color: $verde;  }
+	.box-offers-article-verifica .no-check  { color: #aaaaaa;  }
+	
+
+
+	/**
+	 * Spot
+	 */
+	 
+	.box-offers-article-spot { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;    background: $chiaro; padding:calc($pad / 2) calc($pad / 4); text-align: center;  border-bottom: 1px solid $chiaro;}
+	.box-offers-article-price { font-size: 40px; font-weight: bold; padding: calc($pad / 6); }
+	.box-offers-article-formula {  -webkit-border-radius: 0 0 $raggio $raggio;-moz-border-radius:  0 0 $raggio $raggio;border-radius:  0 0 $raggio $raggio;  margin-top: (calc($pad / 2)); margin-left:-(calc($pad / 4)); margin-bottom: -(calc($pad / 2)); margin-right: -(calc($pad / 4)); padding:calc($pad / 6); color: $chiaro;  }
+	
+	/**
+	 * Colori
+	 */	
+	
+	.pp .box-offers-article-title,
+	.os .box-offers-article-title,	
+	.bg .box-offers-article-title,
+	.lm .box-offers-article-title {   color:#fff !important; border-bottom: 2px solid $chiaro; }
+	
+	.bg .box-offers-article-title {  background: $cyano; }
+	.bg .box-offers-article.top { background: $cyano-chiaro;}
+
+	.pp .box-offers-article-price { color: $viola;}
+	.pp .box-offers-article-formula,
+	.pp .box-offers-article-title {  background: $viola; }
+	.pp .box-offers-article-spot { border: 1px solid $viola; }
+	.pp .box-offers-article.top { background: $viola-chiaro;}
+
+	.os .box-offers-article-price { color: $acqua;}
+	.os .box-offers-article-formula,
+	.os .box-offers-article-title {  background: $acqua; }
+	.os .box-offers-article-spot { border: 1px solid $acqua; }
+
+	.os .box-offers-article.top { background: $acqua-chiaro;}
+	
+	.lm .box-offers-article-price { color: $rosso;}
+	.lm .box-offers-article-formula,
+	.lm .box-offers-article-title { background: $rosso;  }
+	.lm .box-offers-article-spot { border: 1px solid $rosso; }
+
+	.lm .box-offers-article.top { background: $rosso-chiaro;}
+	
+	.pp .box-offers-article { border: 2px solid $viola; }
+	.os .box-offers-article { border: 2px solid $acqua; }  
+	.bg .box-offers-article { border: 2px solid $cyano; }
+	.lm .box-offers-article { border: 2px solid $rosso; }

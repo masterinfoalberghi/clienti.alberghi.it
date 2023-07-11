@@ -1,0 +1,287 @@
+  
+  /**
+   * LAYOUT Generale
+   */
+		
+	
+	body { 
+		
+		padding:0;
+		margin:0;
+		font-family: $font;
+		font-size: $font-size;
+		line-height: $line-height; 
+		color: $color; 
+		font-weight: 400; 
+		overflow-x: hidden; 
+		 
+	}
+
+
+	
+	
+	p { 
+		
+		line-height: $line-height;
+		margin-top: 0;
+		
+	}
+
+	.font-size-plus-hotel {
+		font-size: $font-size-plus-hotel;
+		line-height: $line-height;
+	}
+	
+	small { font-size: $small; color: $grigio-medio-scuro;}
+	
+	.rating { display:inline-block; font-size: 16px; color: $giallo; position: relative; top:-5px; left:5px;   }
+	
+	/**
+	 * Header
+	 */
+	 	
+	h1,h2,h3,h4,h5,h6 { padding:0 0 calc($pad / 2) 0; margin:0; line-height: $line-height; color: $header;  }
+	h1,h2,h3,h4 { font-weight: 400; }
+	h1 {font-size: 30px; line-height: 35px; }
+	section h2 { display:none;  }
+	
+	/**
+	 * Sticker 
+	 */
+	
+	.sticker { z-index: 999; }
+	
+	/**
+	 * Immagini
+	 */	
+	 
+	 figure { 
+		
+		padding:0;
+		margin:0;
+		position: relative;
+		overflow: hidden; 
+
+	}
+	
+	figure img { position: relative; z-index: 1; vertical-align: middle; }
+	.pellicola:after{ position:absolute; top:0; left:0; right:0; bottom:0; content: " "; display: block; background:transparent url("//static.info-alberghi.com/images/pellicola.png") top left; z-index: 2; }
+	.opacity { background: #000000;}
+
+	/**
+	 * Errori
+	 */
+	 
+	#errors { padding-top: calc($pad / 4); }
+	/*#errors { -webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio; text-align: center;  border: 1px solid $rosso; background: $chiaro; color: $rosso; padding: (calc($pad / 6)); margin: (calc($pad / 4)) 0; }*/
+
+	
+	
+	.badge { 
+		
+		-webkit-border-radius: $raggio;-moz-border-radius: $raggio;border-radius: $raggio;
+		color: $grigio-scuro;
+		position:relative; 
+		top:-4px; 
+		font-size: 10px; 
+		font-weight: bold; 
+		background: $hightlight;  
+		text-align: center; 
+		padding:2px calc($pad / 6);
+		margin-left: calc($pad / 6);
+	
+	}
+	
+	.badge.rosso {
+		background: $rosso;
+		color: $chiaro;   
+	}
+	
+	.badge.reverse { background: $grigio-medio-chiaro; color: $chiaro; }
+	
+	.label { color:$grigio-medio-chiaro; }
+		
+	.tag { 
+		
+		text-transform:uppercase; 
+		padding: 0px 3px; 
+		font-weight: bold; 
+		background: $grigio-chiaro; 
+		color: $grigio; 
+		font-size: 10px; 
+		margin-bottom: 1px; 
+		margin-right: 1px; 
+		display: inline-block;  
+		-webkit-border-radius: $raggio;
+		-moz-border-radius: $raggio;
+		border-radius: $raggio;
+		
+	}
+	
+	.tag { color: $chiaro;}
+	.tag.poi { color: $grigio-scuro;  margin:0 4px 2px 0 !important; padding:0 4px; }
+	.tag.verde,
+	.tag.punti { background: $verde; font-size: 12px;  }
+	.tag.bg { background: $cyano;  }
+	.tag.offers { background: $acqua;  }
+
+	.tag.rosso,
+	.tag.last { background: $rosso;  }
+	.tag.pp { background: $verde-lime;  }
+	.tag.cp { background: $marrone;  }
+	
+	.tag>.badge { background: $hightlight; color:$chiaro; top:0; }
+	.tag>b { background: $evidenziato;  color: $scuro; margin:-3px -4px; padding:3px 4px;   }
+	
+	/**
+	 * Modifica pagina
+	 */
+	 
+	.editPage { position: relative; z-index: 1000; }
+	
+	/**
+	 * Navigazione
+	 */
+	
+	nav ul li,
+	nav ul { 
+		
+		padding:0;
+		margin:0;
+		list-style: none;
+		
+	}
+	 
+	nav ul li { display: inline-block; padding:2px 5px;  }
+	
+	/**
+	 * Icone
+	 */
+
+	.icon-whatsapp 	{ color: #00E676; }
+	.icon-skype 	{ color: #00AFF0;  }
+	.icon-globe 	{ color: #F24A46;  }
+	.icon-map 	{ color: #F24A46;  }
+
+
+
+			
+	/**
+	 * Spazi
+	 */
+	
+
+		
+	.no-margin { margin:0px; }
+	
+	.margin				{ margin: $pad;}
+	.margin-2			{ margin: calc($pad / 2);}
+	.margin-3			{ margin: calc($pad / 3);}
+	.margin-4			{ margin: calc($pad / 4);}
+	.margin-6			{ margin: calc($pad / 6);}
+	
+	.margin-left		{ margin-left: $pad }	
+	.margin-right 		{ margin-right: $pad }	
+	.margin-top 		{ margin-top: $pad }
+	.margin-bottom 		{ margin-bottom: $pad }
+	
+	.margin-left-2 		{ margin-left: calc($pad / 2) }	
+	.margin-right-2 	{ margin-right: calc($pad / 2) }	
+	.margin-top-2 		{ margin-top: calc($pad / 2) }
+	.margin-bottom-2 	{ margin-bottom: calc($pad / 2) }
+
+	.margin-left-3 		{ margin-left: calc($pad / 3) }	
+	.margin-right-3 	{ margin-right: calc($pad / 3) }	
+	.margin-top-3 		{ margin-top: calc($pad / 3) }
+	.margin-bottom-3 	{ margin-bottom: calc($pad / 3) }
+	
+	.margin-left-4 		{ margin-left: calc($pad / 4) }	
+	.margin-right-4 	{ margin-right: calc($pad / 4) }	
+	.margin-top-4 		{ margin-top: calc($pad / 4) }
+	.margin-bottom-4 	{ margin-bottom: calc($pad / 4) }
+
+	.margin-left-6 		{ margin-left: calc($pad / 6) }	
+	.margin-right-6 	{ margin-right: calc($pad / 6) }	
+	.margin-top-6 		{ margin-top: calc($pad / 6) }
+	.margin-bottom-6 	{ margin-bottom: calc($pad / 6) }
+	
+	.margin-topx2		{ margin-top: $pad*2} 
+	.margin-bottomx2	{ margin-bottom: $pad*2} 
+	
+	/**
+	 * Padding
+	 */
+	
+	.padding			{ padding: $pad;}
+	.padding-2			{ padding: calc($pad / 2);}
+	.padding-3			{ padding: calc($pad / 3);}
+	.padding-4			{ padding: calc($pad / 4);}
+	.padding-6			{ padding: calc($pad / 6);}
+
+	.padding-top		{ padding-top: $pad; }
+	.padding-very-top		{ padding-top: 6*$pad; }
+	.padding-bottom		{ padding-bottom: $pad; }
+	.padding-left		{ padding-left: $pad; }
+	.padding-right		{ padding-right: $pad; }
+	
+	.padding-left-2 	{ padding-left: calc($pad / 2) }	
+	.padding-right-2 	{ padding-right: calc($pad / 2) }	
+	.padding-top-2 		{ padding-top: calc($pad / 2) }
+	.padding-bottom-2 	{ padding-bottom: calc($pad / 2) }	
+
+	.padding-left-3 	{ padding-left: calc($pad / 3) }	
+	.padding-right-3 	{ padding-right: calc($pad / 3) }	
+	.padding-top-3 		{ padding-top: calc($pad / 3) }
+	.padding-bottom-3 	{ padding-bottom: calc($pad / 3) }	
+	
+	.padding-left-4 	{ padding-left: calc($pad / 4) }	
+	.padding-right-4 	{ padding-right: calc($pad / 4) }	
+	.padding-top-4 		{ padding-top: calc($pad / 4) }
+	.padding-bottom-4 	{ padding-bottom: calc($pad / 4) }
+
+	.padding-left-6 	{ padding-left: calc($pad / 6) }	
+	.padding-right-6 	{ padding-right: calc($pad / 6) }	
+	.padding-top-6 		{ padding-top: calc($pad / 6) }
+	.padding-bottom-6 	{ padding-bottom: calc($pad / 6) }
+	
+	.padding-topx2		{ padding-top: $pad*2} 
+	.padding-bottomx2	{ margin-bottom: $pad*2} 
+	
+	.col-left { padding-right: 2px; }
+	.col-right { padding-left: 2px; }
+	
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) and (max-width: 991px) { 
+	
+		.col-sm-left { padding-right: 2px; }
+		.col-sm-right { padding-left: 2px; }
+			
+	}
+
+	.margin-left-md-6 		{ margin-left: calc($pad / 6) }	
+	.margin-right-md-6 		{ margin-right: calc($pad / 6) }	
+
+	@media (max-width: 991px) { 
+
+		.margin-left-sm-6 		{ margin-left: calc($pad / 6) }	
+		.margin-right-sm-6 		{ margin-right: calc($pad / 6) }	
+
+		.padding-sm-6			{ padding: calc($pad / 6) }
+
+	}
+
+	.no_visible {
+		visibility: hidden;
+	}
+
+	.visible {
+		visibility: visible;
+	}
+
+
+	
+		
+	
+	
+	
+		

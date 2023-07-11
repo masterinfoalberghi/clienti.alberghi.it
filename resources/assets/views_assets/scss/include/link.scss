@@ -1,0 +1,18 @@
+  
+  /**
+   * INCLUDE link
+   */
+		
+	@import "config";
+	
+	a { color: $blu; text-decoration: none; outline: none; position: relative; } 
+	a:hover { color: $cyano;  } 
+	
+	.click_all { cursor: pointer; }
+	
+	/**
+	 * Reverse
+	 */
+	 
+	a.reverse { color: $chiaro; text-decoration: underline; }
+	a.reverse:hover { color: $chiaro; }

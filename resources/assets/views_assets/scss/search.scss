@@ -1,0 +1,47 @@
+	
+	/**
+	 * Search
+	 */		
+
+	@import "include/config";	
+	@import "layout/briciole";
+	@import "layout/box-search";
+	@import "layout/pdf";
+	@import "layout/item-listing";
+
+	.item-ricerca h3 { padding:0; display: inline-block; padding-right: calc($pad / 2);  }
+	.item-ricerca .uri { color: $grigio-medio-chiaro; text-decoration: underline; font-weight: 400; font-size: 12px;  }
+	.item-ricerca figure { padding-right: calc($pad / 2) }
+	.item-ricerca img { width:100%; height:auto;}
+	
+	.item-ricerca { border-bottom:1px dotted #ddd; padding-bottom: 15px; margin-bottom: 30px;}
+    .item-ricerca .item-listing-pdf { width:65%;  margin-top:10px; }
+
+	.item-ricerca a.r_nome_hotel {
+	    display: inline-block;
+	}
+	
+	
+	div.no_risultati_ricerca {
+		text-align: center;
+		border: 1px solid #ddd;
+		margin:50px 20px;
+	}
+
+	div.no_risultati_ricerca .sx {
+		display: inline-block;
+	}
+	
+	div.no_risultati_ricerca p {
+		font-size: 16px;
+	}
+
+	div.no_risultati_ricerca h2 {
+		text-transform: uppercase;
+	}
+
+	div.no_risultati_ricerca h2 span {
+
+		font-weight: bold;
+
+	}

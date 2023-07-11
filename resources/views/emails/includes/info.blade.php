@@ -1,0 +1,1 @@
+Per avere pi&ugrave; informazioni contattaci al numero <b style="background: #FFF9C4; padding:2px 5px;">0541.29187</b> o contattare l'indirizzo email <b style="background: #FFF9C4; padding:2px 5px;">assistenza@info-alberghi.com.</b><br /><br>

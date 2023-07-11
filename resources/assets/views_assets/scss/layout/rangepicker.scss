@@ -1,0 +1,25 @@
+  
+  /**
+   * LAYOUT Picker
+   */	
+   
+	.daterangepicker { z-index:1030 !important; -webkit-box-shadow: $shadow; -moz-box-shadow: $shadow; box-shadow: $shadow; }
+	.daterangepicker td.in-range:not(.off) { background: $arancio-chiaro !important; }
+	.daterangepicker td.end-date:not(.off),
+	.daterangepicker td.start-date:not(.off) { background: $arancio !important; }
+	
+	// .daterangepicker .dateinfo { padding: calc($pad / 2) calc($pad / 2);  text-align: left; border-bottom: 1px solid $bordi; vertical-align: top;  }
+	// .daterangepicker .dateinfo b { color: $header; font-size: 50px; font-weight: normal; display: inline-block; margin-right: calc($pad / 4);   }
+	// .daterangepicker .dateinfo>span { display: inline-block; line-height: 18px; color:$grigio-medio-chiaro;   }
+	// .daterangepicker .dateinfo span span { font-size: 16px;  font-weight: normal;   } 
+	
+	.daterangepicker .flexdate_container { 
+		color:#222; width:100%; display:block; padding:15px; text-align:center; background: $grigio-chiaro;
+	}
+
+	.daterangepicker:before, .daterangepicker:after { border:none !important; }
+	.daterangepicker .next.available { background: $arancio; color:#fff; }
+	.daterangepicker .prev.available { background: $arancio; color:#fff; }
+	
+	
+	
